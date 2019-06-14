@@ -1,0 +1,26 @@
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100%;   
+}
+
+#footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    height: 30px;
+    text-align: center;
+}
+
+#hr-footer {
+    display: block;
+    border: 3px solid black;
+}
+
+#map-first {
+    margin: auto;
+    height: 100%;
+    width: 90%;
+}
