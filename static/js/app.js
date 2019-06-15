@@ -1,6 +1,6 @@
-// // Reading data
-// d3.csv("../data/xxx.csv").then((data) => {
-// });
+// Reading data
+d3.csv("/data").then((data) => {
+});
 
 
 // Leaflet basic layer
