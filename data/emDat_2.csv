@@ -1,0 +1,1229 @@
+,Unnamed: 0,YEAR,COUNTRY,DISASTER_TYPE,TOTAL_DEATHS,TOTAL_INJURIES,TOTAL_DAMAGE_MILLIONS_DOLLARS
+0,0,1900,Japan,Ash fall,30,,
+1,1,1901,Japan,Tsunami,18,,
+2,2,1901,"Tanzania, United Republic of",Ground movement,,,
+3,3,1902,El Salvador,Tsunami,185,,
+4,4,1902,Guatemala,Ash fall,7000,,
+5,5,1902,Guatemala,Ground movement,2000,,
+6,6,1902,Japan,Ash fall,125,,
+7,7,1902,Martinique,Ash fall,30000,,
+8,8,1902,Saint Vincent and the Grenadines,Ash fall,1565,,
+9,9,1902,Soviet Union,Ground movement,4562,,
+10,10,1903,Canada,Rockfall,76,23,
+11,11,1903,Comoros (the),Ash fall,17,,
+12,12,1903,Turkey,Ground movement,6000,,
+13,13,1904,Ecuador,Ground movement,,,
+14,14,1905,Canada,Rockfall,18,18,
+15,15,1905,India,Ground movement,20000,,
+16,16,1905,Italy,Ground movement,2500,,
+17,17,1906,Chile,Ground movement,20000,,100
+18,18,1906,China,Ground movement,1266,,
+19,19,1906,Colombia,Ground movement,400,,
+20,20,1906,Ecuador,Ground movement,,,
+21,21,1906,El Salvador,Ground movement,,,
+22,22,1906,Ethiopia,Ground movement,,,6.75
+23,23,1906,Italy,Ash fall,700,,
+24,24,1906,Nicaragua,Ground movement,1000,,
+25,25,1906,Taiwan (Province of China),Ground movement,7300,,
+26,26,1906,United States of America (the),Ground movement,2000,,524
+27,27,1907,China,Ground movement,12000,,
+28,28,1907,Indonesia,Tsunami,400,,
+29,29,1907,Jamaica,Ground movement,1200,,30
+30,30,1907,Japan,Tsunami,41,,
+31,31,1907,Soviet Union,Ground movement,12000,,
+32,32,1908,Canada,Landslide,33,,
+33,33,1908,Italy,Ground movement,75000,,116
+34,34,1908,Romania,Ground movement,,,
+35,35,1908,"Tanzania, United Republic of",Ground movement,,,
+36,36,1909,France,Ground movement,46,,
+37,37,1909,Indonesia,Ash fall,5500,,
+38,38,1909,Iran (Islamic Republic of),Ground movement,5000,,
+39,39,1909,Morocco,Ground movement,100,,
+40,40,1910,Algeria,Ground movement,12,,
+41,41,1910,Costa Rica,Ground movement,1750,,
+42,42,1910,"Tanzania, United Republic of",Ground movement,,,
+43,43,1911,Philippines (the),Ash fall,1335,199,
+44,44,1912,Romania,Ground movement,,,
+45,45,1912,Turkey,Ground movement,923,1575,
+46,46,1913,Ethiopia,Ground movement,,,
+47,47,1913,Peru,Ground movement,150,,
+48,48,1913,Romania,Ground movement,,,
+49,49,1913,"Tanzania, United Republic of",Ground movement,,,
+50,50,1914,Ethiopia,Ground movement,,,
+51,51,1914,Indonesia,Ground movement,20,20,
+52,52,1914,Japan,Ash fall,140,,20
+53,53,1914,Japan,Ground movement,94,,
+54,54,1914,Japan,Tsunami,35,,
+55,55,1915,Honduras,Ground movement,,,
+56,56,1915,Italy,Ground movement,29980,,60
+57,57,1915,United States of America (the),Ground movement,6,,1
+58,58,1916,Romania,Ground movement,,,
+59,59,1917,China,Ground movement,1800,,
+60,60,1917,Guatemala,Ground movement,2650,,
+61,61,1917,Indonesia,Ground movement,15000,,
+62,62,1918,China,Ground movement,10000,,
+63,63,1918,Philippines (the),Ground movement,100,,
+64,64,1918,Puerto Rico,Ground movement,116,,
+65,65,1918,Russian Federation (the),Tsunami,47,,
+66,66,1918,United States of America (the),Ground movement,116,,29
+67,67,1919,Indonesia,Ash fall,5000,,
+68,68,1920,China,Ground movement,180000,,
+69,69,1920,Italy,Ground movement,,650,
+70,70,1920,South Africa,Ground movement,,,
+71,71,1921,Ethiopia,Ground movement,,,
+72,72,1922,Chile,Ground movement,1000,,
+73,73,1922,Chile,Tsunami,100,,
+74,74,1923,China,Ground movement,7200,,
+75,75,1923,Japan,Ground movement,143000,103733,600
+76,76,1923,Japan,Tsunami,2144,,
+77,77,1923,Soviet Union,Tsunami,18,,
+78,78,1924,Ecuador,Ground movement,40,,
+79,79,1924,Indonesia,Ground movement,727,,
+80,80,1925,China,Ground movement,5000,,
+81,81,1925,United States of America (the),Ground movement,13,,8
+82,82,1926,Egypt,Ground movement,12,,
+83,83,1926,Japan,Ash fall,144,,
+84,84,1927,China,Ground movement,200000,,
+85,85,1927,Ethiopia,Ground movement,,,
+86,86,1927,Indonesia,Ground movement,50,50,
+87,87,1927,Japan,Ground movement,2925,,40
+88,88,1927,Japan,Tsunami,2925,,40
+89,89,1927,Jordan,Ground movement,242,,
+90,90,1928,Bulgaria,Ground movement,107,,
+91,91,1928,Canada,Tsunami,27,,
+92,92,1928,Chile,Ground movement,220,,
+93,93,1928,Greece,Ground movement,103,,
+94,94,1928,Indonesia,Tsunami,128,,
+95,95,1928,Romania,Ground movement,,,
+96,96,1928,Turkey,Ground movement,50,209,
+97,97,1929,Guatemala,Ash fall,5000,,
+98,98,1929,Iran (Islamic Republic of),Ground movement,3300,1121,
+99,99,1929,New Zealand,Ground movement,17,,
+100,100,1930,Indonesia,Ash fall,1369,,
+101,101,1930,Iran (Islamic Republic of),Ground movement,2500,,
+102,102,1930,Italy,Ground movement,1883,,
+103,103,1930,Japan,Ground movement,,,
+104,104,1930,Myanmar,Ground movement,536,,
+105,105,1930,Papua New Guinea,Tsunami,11,,
+106,106,1930,Soviet Union,Ground movement,151,208,
+107,107,1931,Indonesia,Ash fall,1300,,
+108,108,1931,New Zealand,Ground movement,256,,25
+109,109,1931,Nicaragua,Ground movement,1000,,15
+110,110,1931,Solomon Islands,Tsunami,50,,
+111,111,1931,Soviet Union,Ground movement,231,882,
+112,112,1932,China,Ground movement,70000,,
+113,113,1932,Indonesia,Ground movement,6,115,
+114,114,1933,China,Ground movement,10000,,
+115,115,1933,Japan,Tsunami,6064,,25
+116,116,1933,United States of America (the),Ground movement,116,,38.5
+117,117,1934,India,Ground movement,6000,,
+118,118,1934,Nepal,Ground movement,9040,,
+119,119,1934,Romania,Ground movement,,,
+120,120,1934,Soviet Union,Ground movement,456,1189,
+121,121,1935,Pakistan,Ground movement,60000,,
+122,122,1935,Taiwan (Province of China),Ground movement,6110,,
+123,123,1936,Indonesia,Ground movement,26,20,
+124,124,1937,Jamaica,Landslide,40,,
+125,125,1937,Papua New Guinea,Ash fall,506,,
+126,126,1938,Indonesia,Ground movement,17,,
+127,127,1938,Turkey,Ground movement,149,800,
+128,128,1939,Chile,Ground movement,30000,58500,920
+129,129,1939,Ghana,Ground movement,17,,
+130,130,1939,Solomon Islands,Tsunami,12,,
+131,131,1939,Turkey,Ground movement,33065,68,20
+132,132,1940,Peru,Ground movement,249,,
+133,133,1940,Romania,Ground movement,980,,10
+134,134,1940,Turkey,Ground movement,37,,
+135,135,1940,United States of America (the),Ground movement,9,,33
+136,136,1941,Mexico,Ground movement,174,,
+137,137,1941,Myanmar,Ground movement,15,,
+138,138,1942,Chile,Ground movement,5,16,28
+139,139,1942,China,Ground movement,30,,
+140,140,1942,Ecuador,Ground movement,200,,
+141,141,1942,Turkey,Ground movement,7000,,
+142,142,1943,Chile,Ground movement,12,35,100
+143,143,1943,Indonesia,Ground movement,213,2096,
+144,144,1943,Japan,Ground movement,1083,,
+145,145,1943,Mexico,Ash fall,,,
+146,146,1943,Peru,Ground movement,200,,
+147,147,1943,Turkey,Ground movement,2824,5000,
+148,148,1944,Argentina,Ground movement,10000,35000,
+149,149,1944,Italy,Ash fall,26,,
+150,150,1944,Japan,Tsunami,998,,
+151,151,1944,Turkey,Ground movement,3986,,
+152,152,1945,Japan,Ash fall,,,80
+153,153,1945,Japan,Ground movement,1961,,
+154,154,1945,Pakistan,Ground movement,4000,,
+155,155,1945,Romania,Ground movement,,,
+156,156,1946,Algeria,Ground movement,276,,
+157,157,1946,Chile,Ground movement,,,
+158,158,1946,Dominican Republic (the),Ground movement,73,,
+159,159,1946,India,Ground movement,400,,
+160,160,1946,Japan,Ground movement,2000,,
+161,161,1946,Peru,Ground movement,1400,,
+162,162,1946,Tonga,Ash fall,,,
+163,163,1946,Turkey,Ground movement,839,,
+164,164,1946,United States of America (the),Ground movement,165,,25
+165,165,1947,Iran (Islamic Republic of),Ground movement,400,,
+166,166,1947,Peru,Ground movement,233,,
+167,167,1948,Chile,Ash fall,100,,
+168,168,1948,Iran (Islamic Republic of),Ground movement,200,6000,
+169,169,1948,Japan,Ground movement,5131,,1000
+170,170,1948,Philippines (the),Ground movement,27,,
+171,171,1948,Soviet Union,Ground movement,110000,,25
+172,172,1948,Turkey,Ground movement,260,,
+173,173,1949,Argentina,Ground movement,,,
+174,174,1949,Chile,Ground movement,41,173,44.2
+175,175,1949,Colombia,Ash fall,1000,,
+176,176,1949,Ecuador,Ground movement,6000,,20
+177,177,1949,Mexico,Ash fall,1000,,
+178,178,1949,Turkey,Ground movement,437,355,
+179,179,1949,United States of America (the),Ground movement,8,,80
+180,180,1950,Colombia,Ground movement,150,,
+181,181,1950,India,Ground movement,1500,,
+182,182,1950,Peru,Ground movement,83,200,
+183,183,1950,Philippines (the),Ash fall,84,,
+184,184,1950,Venezuela (Bolivarian Republic of),Ground movement,100,,
+185,185,1951,El Salvador,Ground movement,1000,,23
+186,186,1951,Indonesia,Ash fall,1300,,
+187,187,1951,Nicaragua,Ground movement,500,,
+188,188,1951,Papua New Guinea,Ash fall,3000,,
+189,189,1951,Philippines (the),Ash fall,500,,
+190,190,1951,Turkey,Ground movement,54,150,
+191,191,1952,Haiti,Ground movement,6,,20
+192,192,1952,Japan,Ash fall,29,,
+193,193,1952,Japan,Ground movement,30,200,
+194,194,1952,Soviet Union,Tsunami,2300,,
+195,195,1952,Turkey,Ground movement,80,250,
+196,196,1952,United States of America (the),Ground movement,16,,80
+197,197,1952,United States of America (the),Tsunami,,,0.9
+198,198,1953,Chile,Ground movement,15,55,507.31
+199,199,1953,Cyprus,Ground movement,40,100,
+200,200,1953,Greece,Ground movement,455,,100
+201,201,1953,Iran (Islamic Republic of),Ground movement,1000,,
+202,202,1953,New Zealand,Ash fall,150,,
+203,203,1953,Peru,Ground movement,7,,
+204,204,1953,Turkey,Ground movement,1200,,
+205,205,1954,Afghanistan,Ground movement,2000,,
+206,206,1954,Algeria,Ground movement,1250,,6
+207,207,1954,China,Ground movement,50,300,
+208,208,1954,Greece,Ground movement,31,200,
+209,209,1954,Indonesia,Ash fall,37,,
+210,210,1954,Philippines (the),Ground movement,13,101,
+211,211,1955,Canada,Landslide,3,6,
+212,212,1955,China,Ground movement,39,113,
+213,213,1955,Egypt,Ground movement,20,28,
+214,214,1955,Philippines (the),Ground movement,400,2000,
+215,215,1955,Thailand,Tsunami,500,,
+216,216,1956,Afghanistan,Ground movement,100,2000,25
+217,217,1956,Greece,--,53,100,
+218,218,1956,India,Ground movement,113,219,
+219,219,1956,Iran (Islamic Republic of),Ground movement,350,,
+220,220,1956,Lebanon,Ground movement,136,200,
+221,221,1956,Soviet Union,Ash fall,,,
+222,222,1956,Spain,Ground movement,11,70,
+223,223,1957,Iran (Islamic Republic of),Ground movement,5544,5000,
+224,224,1957,Mexico,Ground movement,160,100,25
+225,225,1957,Mongolia,Ground movement,1200,,
+226,226,1957,Papua New Guinea,Ash fall,,,
+227,227,1957,Tunisia,Ground movement,13,,
+228,228,1957,Turkey,Ground movement,76,219,
+229,229,1958,Chile,Ground movement,,35,10.1
+230,230,1958,Indonesia,Ground movement,8,,
+231,231,1958,Iran (Islamic Republic of),Ground movement,191,984,
+232,232,1958,Peru,Ground movement,28,,
+233,233,1959,China,Tsunami,47,,
+234,234,1959,Mexico,Ground movement,28,,
+235,235,1959,United States of America (the),Ground movement,28,,26
+236,236,1960,Algeria,Ground movement,57,,
+237,237,1960,Chile,Ground movement,6570,3000,550
+238,238,1960,Iran (Islamic Republic of),Ground movement,480,,
+239,239,1960,Japan,Tsunami,138,,140
+240,240,1960,Morocco,Ground movement,12000,25000,120
+241,241,1960,Papua New Guinea,Ash fall,,,
+242,242,1960,Peru,Ground movement,57,,
+243,243,1960,Philippines (the),Tsunami,32,,
+244,244,1960,United States of America (the),Tsunami,61,,
+245,245,1961,Ethiopia,Ground movement,,,
+246,246,1961,Iran (Islamic Republic of),Ground movement,60,,
+247,247,1962,Colombia,Ground movement,112,,
+248,248,1962,Iran (Islamic Republic of),Ground movement,12000,3000,30
+249,249,1962,Peru,Landslide,2000,,200
+250,250,1962,Turkey,Ground movement,97,267,
+251,251,1963,Chile,Ground movement,280,460,235
+252,252,1963,Costa Rica,Ash fall,15,200,
+253,253,1963,Indonesia,Ash fall,1690,,
+254,254,1963,Libya,Ground movement,320,,5
+255,255,1963,Nepal,Landslide,150,,
+256,256,1963,Yugoslavia,Ground movement,1100,3383,600
+257,257,1964,Azores Islands,Ground movement,,,
+258,258,1964,Chile,Ash fall,4,,
+259,259,1964,Japan,Tsunami,25,376,800
+260,260,1964,Mexico,Ground movement,45,,3
+261,261,1964,Taiwan (Province of China),Ground movement,107,2485,
+262,262,1964,"Tanzania, United Republic of",Ground movement,4,,
+263,263,1964,Turkey,Ground movement,23,100,5
+264,264,1964,United States of America (the),Ground movement,131,,1020
+265,265,1965,Algeria,Ground movement,2,350,2
+266,266,1965,Chile,Ground movement,400,350,125
+267,267,1965,El Salvador,Ground movement,125,1138,35
+268,268,1965,Greece,Ground movement,38,253,8
+269,269,1965,Indonesia,Ground movement,111,,
+270,270,1965,Philippines (the),Ash fall,355,785,10
+271,271,1965,United States of America (the),Ground movement,7,,28
+272,272,1966,Chile,Ground movement,4,6,0.4
+273,273,1966,China,Ground movement,,,
+274,274,1966,Congo (the Democratic Republic of the),Ground movement,24,600,0.2
+275,275,1966,Greece,Ground movement,2,173,18
+276,276,1966,Indonesia,Ash fall,1088,2060,
+277,277,1966,Nepal,Ground movement,80,100,1
+278,278,1966,Peru,Ground movement,120,1500,15
+279,279,1966,Soviet Union,Ground movement,10,,300
+280,280,1966,Turkey,Ground movement,2408,1500,20
+281,281,1966,Uganda,Ground movement,104,510,1.5
+282,282,1967,Albania,Ground movement,11,134,
+283,283,1967,Colombia,Ground movement,61,200,0.6
+284,284,1967,Greece,Ground movement,9,56,5
+285,285,1967,India,Ground movement,177,2272,0.4
+286,286,1967,Indonesia,Ground movement,125,221,
+287,287,1967,Philippines (the),Ground movement,200,,
+288,288,1967,Turkey,Ground movement,183,360,3
+289,289,1967,Venezuela (Bolivarian Republic of),Ground movement,240,1536,50
+290,290,1967,Yugoslavia,Ground movement,7,70,20
+291,291,1968,Australia,Ground movement,,16,2.6
+292,292,1968,Costa Rica,Ash fall,87,,5
+293,293,1968,Greece,Ground movement,19,18,0.6
+294,294,1968,Indonesia,Tsunami,200,,
+295,295,1968,Iran (Islamic Republic of),Ground movement,10038,4150,36
+296,296,1968,Italy,Ground movement,224,563,250
+297,297,1968,Japan,Ground movement,47,281,131
+298,298,1968,Mexico,Ground movement,15,500,
+299,299,1968,New Zealand,Ground movement,3,14,2.669
+300,300,1968,Nicaragua,Ground movement,,,2
+301,301,1968,Peru,Ground movement,11,120,0.1
+302,302,1968,Philippines (the),Ash fall,3,,5
+303,303,1968,Philippines (the),Ground movement,271,261,5
+304,304,1968,Turkey,Ground movement,29,,
+305,305,1968,Yugoslavia,Ground movement,1,30,38.6
+306,306,1969,China,Ground movement,3000,,
+307,307,1969,Ethiopia,Ground movement,24,165,0.32
+308,308,1969,Indonesia,Ash fall,,,0.2
+309,309,1969,Indonesia,Tsunami,64,97,
+310,310,1969,Iran (Islamic Republic of),Ground movement,50,300,
+311,311,1969,Peru,Ground movement,150,216,5
+312,312,1969,Philippines (the),Ash fall,,,
+313,313,1969,South Africa,Ground movement,9,,
+314,314,1969,Turkey,Ground movement,41,350,
+315,315,1969,Yugoslavia,Ground movement,15,1116,50
+316,316,1970,China,Ground movement,10000,,
+317,317,1970,Colombia,Ground movement,430,6,0.4
+318,318,1970,Ecuador,Ground movement,29,120,4
+319,319,1970,India,Ground movement,26,,
+320,320,1970,Iran (Islamic Republic of),Ground movement,176,,8
+321,321,1970,Papua New Guinea,Ground movement,15,,1.75
+322,322,1970,Peru,Ground movement,66823,143583,532
+323,323,1970,Philippines (the),Ground movement,14,200,
+324,324,1970,Turkey,Ground movement,1086,2776,55.6
+325,325,1971,Canada,Landslide,31,,
+326,326,1971,Chile,Ground movement,85,451,236.4
+327,327,1971,Italy,Ground movement,22,100,41.6
+328,328,1971,Nicaragua,Ash fall,,,2
+329,329,1971,Saint Vincent and the Grenadines,Ash fall,,,
+330,330,1971,Solomon Islands,Ash fall,,,
+331,331,1971,Turkey,Ground movement,935,1200,5
+332,332,1971,United States of America (the),Ground movement,65,1000,535
+333,333,1972,India,Ground movement,100,,
+334,334,1972,Iran (Islamic Republic of),Ground movement,5057,1332,1
+335,335,1972,Italy,Ground movement,1,,
+336,336,1972,Nicaragua,Ground movement,10000,20000,845
+337,337,1972,Peru,Ground movement,12,,20
+338,338,1973,Costa Rica,Ground movement,21,98,0.2
+339,339,1973,Iceland,Ash fall,,,24.7
+340,340,1973,Mexico,Ground movement,517,,
+341,341,1973,Philippines (the),Ground movement,14,64,0.45
+342,342,1974,China,Ground movement,20000,,
+343,343,1974,Japan,Ground movement,30,73,
+344,344,1974,Pakistan,Ground movement,4700,15000,3.255
+345,345,1974,Peru,Ground movement,78,2414,10
+346,346,1975,China,Ground movement,10000,,
+347,347,1975,Costa Rica,Ash fall,2,,
+348,348,1975,Ecuador,Ash fall,,,
+349,349,1975,India,Ground movement,47,,
+350,350,1975,Solomon Islands,Tsunami,200,,
+351,351,1975,Turkey,Ground movement,2385,3372,17
+352,352,1976,Afghanistan,Ground movement,50,,
+353,353,1976,China,Ground movement,242000,164000,5600
+354,354,1976,Costa Rica,Ash fall,,,
+355,355,1976,Cuba,Ground movement,1,8,
+356,356,1976,Ecuador,Ash fall,1,,
+357,357,1976,Ecuador,Ground movement,20,,4
+358,358,1976,Guadeloupe,Ash fall,,3,
+359,359,1976,Guatemala,Ground movement,23000,77000,1000
+360,360,1976,Iceland,Ground movement,1,6,
+361,361,1976,Indonesia,Ash fall,40,,
+362,362,1976,Indonesia,Ground movement,1126,4755,195
+363,363,1976,Iran (Islamic Republic of),Ground movement,16,,
+364,364,1976,Italy,Ground movement,934,1750,3600
+365,365,1976,New Zealand,Ground movement,,,
+366,366,1976,Philippines (the),Ash fall,,,0.679
+367,367,1976,Philippines (the),Ground movement,6000,6348,134
+368,368,1976,Soviet Union,Ground movement,,,85
+369,369,1976,Turkey,Ground movement,3846,15034,25
+370,370,1977,Argentina,Ground movement,70,100,80
+371,371,1977,Bulgaria,Ground movement,20,165,
+372,372,1977,Comoros (the),Ash fall,1,,
+373,373,1977,Congo (the Democratic Republic of the),Ash fall,147,,
+374,374,1977,Ethiopia,Ash fall,64,,
+375,375,1977,Indonesia,Ground movement,187,100,1.2
+376,376,1977,Iran (Islamic Republic of),Ground movement,1114,1280,
+377,377,1977,Japan,Ash fall,3,,22
+378,378,1977,Philippines (the),Ground movement,1,30,0.1
+379,379,1977,RÈunion,Ash fall,,,
+380,380,1977,Romania,Ground movement,1641,11300,2000
+381,381,1977,Solomon Islands,Ground movement,34,1,
+382,382,1977,Tonga,Ground movement,1,5,1.2
+383,383,1977,Turkey,Ground movement,30,,
+384,384,1978,Germany Fed Rep,Ground movement,,35,150
+385,385,1978,Greece,Ground movement,50,100,250
+386,386,1978,Iran (Islamic Republic of),Ground movement,25045,52,50
+387,387,1978,Italy,Ground movement,5,,
+388,388,1978,Japan,Ground movement,53,619,865
+389,389,1978,Mexico,Ground movement,9,100,
+390,390,1978,Philippines (the),Ash fall,,,
+391,391,1978,Turkey,Ground movement,,20,
+392,392,1979,Albania,Ground movement,35,350,
+393,393,1979,Australia,Ground movement,,,7.075
+394,394,1979,China,Ground movement,41,2104,
+395,395,1979,Colombia,Ground movement,639,1642,28
+396,396,1979,France,Tsunami,11,2,
+397,397,1979,Guatemala,Ground movement,,40,
+398,398,1979,India,Ground movement,,,
+399,399,1979,Indonesia,Ash fall,257,1000,
+400,400,1979,Indonesia,Ground movement,99,872,20.15
+401,401,1979,Indonesia,Tsunami,539,23,
+402,402,1979,Iran (Islamic Republic of),Ground movement,565,278,
+403,403,1979,Italy,Ash fall,9,24,
+404,404,1979,Italy,Ground movement,5,,
+405,405,1979,Japan,Ground movement,27,,
+406,406,1979,Korea (the Democratic People's Republic of),Ground movement,,,
+407,407,1979,Mexico,Ground movement,5,35,30
+408,408,1979,Peru,Ground movement,13,1000,
+409,409,1979,Saint Vincent and the Grenadines,Ash fall,2,,
+410,410,1979,Yugoslavia,Ground movement,121,180,450
+411,411,1980,Algeria,Ground movement,2635,8459,5200
+412,412,1980,Azores Islands,Ground movement,69,600,
+413,413,1980,Ecuador,Ground movement,8,40,
+414,414,1980,Greece,Ground movement,1,17,
+415,415,1980,Honduras,Ground movement,2,,
+416,416,1980,India,Ground movement,13,48,
+417,417,1980,Indonesia,Ash fall,,,
+418,418,1980,Indonesia,Ground movement,,,
+419,419,1980,Iran (Islamic Republic of),Ground movement,50,100,
+420,420,1980,Italy,Ground movement,4689,7700,20000
+421,421,1980,Japan,Ground movement,2,80,
+422,422,1980,Mexico,Ground movement,67,360,
+423,423,1980,Nepal,Ground movement,100,5600,245
+424,424,1980,Peru,Ground movement,7,,
+425,425,1980,Philippines (the),Rockfall,50,,
+426,426,1980,Soviet Union,Ground movement,87,,5
+427,427,1980,United States of America (the),Ash fall,90,,860
+428,428,1980,United States of America (the),Ground movement,,2,
+429,429,1980,Venezuela (Bolivarian Republic of),Ground movement,,36,
+430,430,1980,Yugoslavia,Ground movement,,100,
+431,431,1981,China,Ground movement,150,850,
+432,432,1981,Colombia,Ground movement,10,,
+433,433,1981,Greece,Ground movement,24,400,900
+434,434,1981,India,Ground movement,212,,
+435,435,1981,Indonesia,Ash fall,192,,
+436,436,1981,Indonesia,Ground movement,306,,
+437,437,1981,Iran (Islamic Republic of),Ground movement,3200,4000,1005
+438,438,1981,Italy,Ground movement,12,6,
+439,439,1981,Mexico,Ground movement,3,28,
+440,440,1981,Pakistan,Ground movement,256,2012,
+441,441,1981,Peru,Ground movement,18,115,
+442,442,1981,Venezuela (Bolivarian Republic of),Ground movement,15,,5
+443,443,1981,Yugoslavia,Ground movement,,44,
+444,444,1982,Afghanistan,Ground movement,500,3000,1
+445,445,1982,Albania,Ground movement,1,5,
+446,446,1982,Bolivia (Plurinational State of),Ground movement,20,,
+447,447,1982,China,Ground movement,10,5,
+448,448,1982,El Salvador,Ground movement,20,,
+449,449,1982,Guatemala,Ground movement,20,,5
+450,450,1982,Honduras,Ground movement,,,
+451,451,1982,Indonesia,Ash fall,30,,160
+452,452,1982,Indonesia,Ground movement,13,417,4.95
+453,453,1982,Italy,Ground movement,,,35
+454,454,1982,Japan,Ground movement,,100,
+455,455,1982,Liberia,Landslide,46,,
+456,456,1982,Mexico,Ash fall,100,500,117
+457,457,1982,Mexico,Ground movement,9,17,
+458,458,1982,Peru,Ground movement,3,,
+459,459,1982,Philippines (the),Ground movement,,,
+460,460,1982,Poland,Ground movement,,,
+461,461,1982,South Africa,Ground movement,17,,
+462,462,1982,Yemen Arab Rep,Ground movement,1507,1500,2000
+463,463,1983,Afghanistan,Ground movement,12,483,3
+464,464,1983,Belgium,Ground movement,2,30,50
+465,465,1983,Chile,Ground movement,4,24,
+466,466,1983,China,Ground movement,34,2200,
+467,467,1983,China,Landslide,277,,
+468,468,1983,Colombia,Ground movement,250,1200,410.9
+469,469,1983,Colombia,Rockfall,160,,
+470,470,1983,Costa Rica,Ground movement,12,60,1
+471,471,1983,Greece,Ground movement,,7,
+472,472,1983,Guatemala,Ash fall,,,
+473,473,1983,Guinea,Ground movement,275,1436,
+474,474,1983,Iceland,Ash fall,,,
+475,475,1983,Indonesia,Ash fall,,,175.19
+476,476,1983,Indonesia,Ground movement,,100,1
+477,477,1983,Iran (Islamic Republic of),Ground movement,33,102,5
+478,478,1983,Italy,Ground movement,,30,
+479,479,1983,Japan,Ash fall,,,
+480,480,1983,Japan,Ground movement,1,28,
+481,481,1983,Japan,Tsunami,102,77,416
+482,482,1983,Lebanon,Landslide,20,,
+483,483,1983,Pakistan,Ground movement,24,543,3
+484,484,1983,Papua New Guinea,Ash fall,,,
+485,485,1983,Papua New Guinea,Ground movement,10,,
+486,486,1983,Peru,Ground movement,10,,
+487,487,1983,Philippines (the),Ground movement,19,176,2.227
+488,488,1983,Soviet Union,Ground movement,,,
+489,489,1983,Turkey,Ground movement,1346,1137,25
+490,490,1983,United States of America (the),Ground movement,2,53,52.25
+491,491,1983,Yugoslavia,Ground movement,12,,
+492,492,1984,Afghanistan,Ground movement,1,35,5
+493,493,1984,Cameroon,Ash fall,37,,
+494,494,1984,Guatemala,Ash fall,,,
+495,495,1984,Iceland,Ash fall,,,
+496,496,1984,India,Ground movement,20,100,
+497,497,1984,Indonesia,Ash fall,,,
+498,498,1984,Indonesia,Ground movement,2,197,1
+499,499,1984,Italy,Ground movement,4,285,
+500,500,1984,Japan,Ground movement,20,9,43
+501,501,1984,Pakistan,Ground movement,4,12,
+502,502,1984,Philippines (the),Ash fall,,,
+503,503,1984,Soviet Union,Ground movement,,100,
+504,504,1984,Turkey,Ground movement,6,73,
+505,505,1985,Algeria,Ground movement,30,,1
+506,506,1985,American Samoa,Ground movement,,,
+507,507,1985,Argentina,Ground movement,6,238,
+508,508,1985,Chile,Ground movement,180,2483,1500
+509,509,1985,China,Ground movement,90,520,
+510,510,1985,Colombia,Ash fall,21800,5000,1000
+511,511,1985,Greece,Ground movement,,,
+512,512,1985,Guatemala,Ground movement,,,
+513,513,1985,Indonesia,Ash fall,,,
+514,514,1985,Indonesia,Ground movement,10,7,
+515,515,1985,Iran (Islamic Republic of),Ground movement,1,80,
+516,516,1985,Japan,Ground movement,,20,
+517,517,1985,Mexico,Ground movement,9500,30204,4104
+518,518,1985,Pakistan,Ground movement,5,38,2
+519,519,1985,Papua New Guinea,Ground movement,,,1
+520,520,1985,Peru,Ground movement,,100,
+521,521,1985,Peru,Landslide,,,
+522,522,1985,Philippines (the),Ground movement,2,25,
+523,523,1985,Philippines (the),Landslide,300,,
+524,524,1985,Soviet Union,Ground movement,29,80,
+525,525,1985,Turkey,Ground movement,,14,
+526,526,1985,Vanuatu,Ground movement,,,
+527,527,1985,Yugoslavia,Ground movement,,16,
+528,528,1986,Brazil,Ground movement,1,,5
+529,529,1986,Bulgaria,Ground movement,3,60,
+530,530,1986,Cameroon,Ash fall,1746,437,
+531,531,1986,China,Ground movement,,,
+532,532,1986,El Salvador,Ground movement,1100,20000,1500
+533,533,1986,Greece,Ground movement,20,300,745
+534,534,1986,Guatemala,Ground movement,,,
+535,535,1986,India,Ground movement,6,30,5
+536,536,1986,Iran (Islamic Republic of),Ground movement,1,4,
+537,537,1986,Japan,Ash fall,,,
+538,538,1986,Pakistan,Ground movement,,,
+539,539,1986,Papua New Guinea,Ground movement,,,0.5
+540,540,1986,Peru,Ground movement,16,80,22
+541,541,1986,Soviet Union,Ground movement,3,558,730
+542,542,1986,Taiwan (Province of China),Ground movement,13,46,
+543,543,1986,Turkey,Ground movement,15,103,
+544,544,1986,United States of America (the),Ground movement,,29,0.72
+545,545,1986,Venezuela (Bolivarian Republic of),Ground movement,3,50,1
+546,546,1987,Algeria,Ground movement,1,7,1
+547,547,1987,Chile,Ground movement,5,112,1
+548,548,1987,China,Ground movement,,84,
+549,549,1987,Ecuador,Ground movement,5002,6,1500
+550,550,1987,Guatemala,Ash fall,,35,
+551,551,1987,Indonesia,Ash fall,,,
+552,552,1987,Indonesia,Ground movement,127,101,5
+553,553,1987,Indonesia,Landslide,131,50,1
+554,554,1987,Iran (Islamic Republic of),Ground movement,2,50,
+555,555,1987,Japan,Ground movement,2,53,
+556,556,1987,Mexico,Ground movement,2,50,
+557,557,1987,New Zealand,Ground movement,1,25,210
+558,558,1987,Papua New Guinea,Ground movement,1,,2.625
+559,559,1987,South Africa,Ground movement,9,25,
+560,560,1987,Soviet Union,Landslide,52,6,
+561,561,1987,United States of America (the),Ground movement,8,94,217
+562,562,1988,Albania,Ground movement,,,
+563,563,1988,Algeria,Ground movement,,57,
+564,564,1988,Bangladesh,Ground movement,2,100,
+565,565,1988,Chile,Ash fall,,,
+566,566,1988,China,Ground movement,939,3424,269
+567,567,1988,Colombia,Ash fall,,,
+568,568,1988,Greece,Ground movement,,25,
+569,569,1988,Guatemala,Ground movement,5,,
+570,570,1988,India,Ground movement,384,3778,72.5
+571,571,1988,Indonesia,Ash fall,7,,
+572,572,1988,Iran (Islamic Republic of),Ground movement,1,54,
+573,573,1988,Japan,Ash fall,,,
+574,574,1988,Morocco,Rockfall,31,,
+575,575,1988,Nepal,Ground movement,709,1016,60
+576,576,1988,Pakistan,Avalanche,50,,
+577,577,1988,Papua New Guinea,Landslide,76,,
+578,578,1988,Solomon Islands,Ground movement,1,,
+579,579,1988,South Africa,Ground movement,8,28,
+580,580,1988,Soviet Union,Ground movement,25000,12000,14000
+581,581,1988,Uganda,Ground movement,,,
+582,582,1989,Algeria,Ground movement,22,184,
+583,583,1989,Australia,Ground movement,12,115,1000
+584,584,1989,Bangladesh,Ground movement,1,100,
+585,585,1989,China,Ground movement,42,392,218
+586,586,1989,Honduras,Avalanche,10,,
+587,587,1989,India,Landslide,45,,
+588,588,1989,Indonesia,Ash fall,,,
+589,589,1989,Indonesia,Ground movement,120,203,
+590,590,1989,Iran (Islamic Republic of),Ground movement,100,17,
+591,591,1989,Malawi,Ground movement,9,100,28
+592,592,1989,Mexico,Ground movement,3,350,
+593,593,1989,Soviet Union,Ground movement,274,51,24.8
+594,594,1989,Soviet Union,Landslide,,,
+595,595,1989,United States of America (the),Ground movement,67,3757,5600
+596,596,1989,Venezuela (Bolivarian Republic of),Ground movement,,,
+597,597,1990,Bulgaria,Ground movement,1,,
+598,598,1990,China,Ground movement,127,2065,58.35
+599,599,1990,China,Landslide,73,115,
+600,600,1990,Costa Rica,Ground movement,1,309,19.5
+601,601,1990,Ecuador,Ground movement,4,10,
+602,602,1990,Fiji,Ground movement,,,
+603,603,1990,Greece,Ground movement,1,61,
+604,604,1990,Indonesia,Ash fall,33,,8
+605,605,1990,Indonesia,Ground movement,6,171,2.1
+606,606,1990,Iran (Islamic Republic of),Ground movement,40021,105090,8232.3
+607,607,1990,Italy,Ground movement,21,216,500
+608,608,1990,Kenya,Ground movement,,,
+609,609,1990,Nicaragua,Ground movement,,,
+610,610,1990,Pakistan,Ground movement,22,296,1
+611,611,1990,Papua New Guinea,Ground movement,,,
+612,612,1990,Peru,Ash fall,,,
+613,613,1990,Peru,Ground movement,200,800,1
+614,614,1990,Philippines (the),Ground movement,2417,3532,370.5
+615,615,1990,Romania,Ground movement,9,700,
+616,616,1990,South Africa,Ground movement,10,6,
+617,617,1990,Soviet Union,Ground movement,5,8,
+618,618,1990,Sudan (the),Ground movement,,,
+619,619,1990,Uganda,Ground movement,,,
+620,620,1990,United Kingdom of Great Britain and Northern Ireland (the),Ground movement,,,
+621,621,1990,United States of America (the),Ground movement,,30,12.7
+622,622,1990,Vanuatu,Ground movement,,2,
+623,623,1991,Afghanistan,Ground movement,154,,
+624,624,1991,Argentina,Ash fall,,,
+625,625,1991,Chile,Ash fall,,,15
+626,626,1991,China,Ground movement,1,545,
+627,627,1991,Colombia,Ground movement,2,2,
+628,628,1991,Comoros (the),Ash fall,,,
+629,629,1991,Costa Rica,Ash fall,,,
+630,630,1991,Costa Rica,Ground movement,47,199,100
+631,631,1991,Ethiopia,Landslide,13,,
+632,632,1991,Georgia,Ground movement,8,200,
+633,633,1991,Guatemala,Ground movement,14,90,
+634,634,1991,Guatemala,Rockfall,23,,
+635,635,1991,India,Ground movement,1500,1383,60
+636,636,1991,Indonesia,Ash fall,,,1
+637,637,1991,Indonesia,Ground movement,28,191,18
+638,638,1991,Iran (Islamic Republic of),Ground movement,,51,
+639,639,1991,Iraq,Ground movement,20,,
+640,640,1991,Italy,Ash fall,,,
+641,641,1991,Japan,Ash fall,43,20,10
+642,642,1991,Myanmar,Ground movement,,,
+643,643,1991,Pakistan,Ground movement,300,574,10
+644,644,1991,Panama,Ground movement,30,596,
+645,645,1991,Peru,Ground movement,64,785,
+646,646,1991,Philippines (the),Ash fall,640,195,211
+647,647,1991,Romania,Ground movement,,5,
+648,648,1991,Soviet Union,Ground movement,274,1500,1700
+649,649,1991,Soviet Union,Landslide,50,,
+650,650,1991,United States of America (the),Ground movement,2,100,33.5
+651,651,1991,Yemen,Ground movement,10,39,
+652,652,1992,Afghanistan,Ground movement,14,,
+653,653,1992,Algeria,Ground movement,,,
+654,654,1992,Belgium,Ground movement,,,100
+655,655,1992,China,Ground movement,,,3.15
+656,656,1992,China,Landslide,49,,
+657,657,1992,Colombia,Ground movement,11,135,
+658,658,1992,Congo (the Democratic Republic of the),Ground movement,9,61,
+659,659,1992,Cuba,Ground movement,,40,
+660,660,1992,Egypt,Ground movement,552,9929,1200
+661,661,1992,Georgia,Ground movement,1,10,
+662,662,1992,Germany,Ground movement,1,25,50
+663,663,1992,Guatemala,Ash fall,,,
+664,664,1992,Indonesia,Ground movement,2500,2104,100
+665,665,1992,Iran (Islamic Republic of),Ground movement,5,50,
+666,666,1992,Japan,Ash fall,,,
+667,667,1992,Japan,Ground movement,,32,
+668,668,1992,Kyrgyzstan,Ground movement,58,100,161
+669,669,1992,Netherlands (the),Ground movement,,20,
+670,670,1992,Nicaragua,Ash fall,1,75,
+671,671,1992,Nicaragua,Ground movement,179,489,25
+672,672,1992,Pakistan,Ground movement,40,100,
+673,673,1992,Papua New Guinea,Ash fall,,,
+674,674,1992,Philippines (the),Ash fall,,,
+675,675,1992,Tajikistan,Avalanche,12,,
+676,676,1992,Turkey,Avalanche,261,69,
+677,677,1992,Turkey,Ground movement,653,3850,750
+678,678,1992,United States of America (the),Ground movement,1,426,275
+679,679,1992,Uzbekistan,Ground movement,9,,
+680,680,1992,Uzbekistan,Landslide,1,,
+681,681,1993,Chile,Ash fall,6,,
+682,682,1993,China,Ground movement,,70,
+683,683,1993,Colombia,Ash fall,10,6,
+684,684,1993,Colombia,Ground movement,2,60,
+685,685,1993,Colombia,Landslide,75,36,
+686,686,1993,Costa Rica,Ground movement,3,40,
+687,687,1993,Egypt,Subsidence,34,,
+688,688,1993,Greece,Ground movement,1,21,
+689,689,1993,Guam,Ground movement,,71,120
+690,690,1993,India,Ground movement,9748,30025,280
+691,691,1993,Indonesia,Ash fall,3,12,
+692,692,1993,Iran (Islamic Republic of),Ground movement,24,52,
+693,693,1993,Japan,Ash fall,1,,
+694,694,1993,Japan,Ground movement,2,722,358
+695,695,1993,Japan,Tsunami,239,233,1000
+696,696,1993,Malaysia,Landslide,72,,
+697,697,1993,Mexico,Ground movement,,,
+698,698,1993,Nepal,Ground movement,,55,
+699,699,1993,Papua New Guinea,Ground movement,53,200,5
+700,700,1993,Peru,Ground movement,6,25,
+701,701,1993,Philippines (the),Ash fall,79,9,0.488
+702,702,1993,Sudan (the),Ground movement,3,15,
+703,703,1993,United States of America (the),Ground movement,2,,7.5
+704,704,1993,Wallis and Futuna,Ground movement,5,20,
+705,705,1994,Afghanistan,Ground movement,160,330,
+706,706,1994,Algeria,Ground movement,171,289,
+707,707,1994,Australia,Ground movement,,5,
+708,708,1994,Bolivia (Plurinational State of),Ground movement,5,,
+709,709,1994,China,Ground movement,1,865,
+710,710,1994,Colombia,Ground movement,271,158,2.4
+711,711,1994,Indonesia,Ash fall,96,22,
+712,712,1994,Indonesia,Ground movement,454,2009,172.676
+713,713,1994,Iran (Islamic Republic of),Ground movement,14,131,1.4
+714,714,1994,Japan,Ground movement,7,1785,170.4
+715,715,1994,Mexico,Ash fall,,,
+716,716,1994,Papua New Guinea,Ash fall,5,2,110
+717,717,1994,Philippines (the),Ground movement,81,174,3.7
+718,718,1994,Russian Federation (the),Ground movement,11,242,
+719,719,1994,Uganda,Ground movement,7,,70
+720,720,1994,United States of America (the),Ground movement,60,7000,30002.1
+721,721,1994,Vanuatu,Ground movement,,,
+722,722,1995,Cabo Verde,Ash fall,,6,
+723,723,1995,Chile,Ground movement,3,58,1.66
+724,724,1995,China,Ground movement,71,493,116.1
+725,725,1995,Colombia,Ground movement,55,269,
+726,726,1995,Cyprus,Ground movement,2,5,4.34
+727,727,1995,Ecuador,Ground movement,3,90,
+728,728,1995,Egypt,Ground movement,10,69,
+729,729,1995,Greece,Ground movement,52,160,872.7
+730,730,1995,Indonesia,Ground movement,99,1932,
+731,731,1995,Japan,Ground movement,5297,34531,100000
+732,732,1995,Mexico,Ground movement,64,125,21.1
+733,733,1995,Montserrat,Ash fall,,,
+734,734,1995,Myanmar,Ground movement,,,
+735,735,1995,New Zealand,Ash fall,,,
+736,736,1995,Nicaragua,Ash fall,,,0.722
+737,737,1995,Philippines (the),Ash fall,,,
+738,738,1995,Philippines (the),Ground movement,,,
+739,739,1995,Russian Federation (the),Ground movement,1989,750,64.1
+740,740,1995,Thailand,Ground movement,,,
+741,741,1995,Turkey,Ground movement,94,240,205.8
+742,742,1996,Afghanistan,Ground movement,,,
+743,743,1996,China,Ground movement,353,17490,530
+744,744,1996,Croatia,Ground movement,,,
+745,745,1996,Ecuador,Ground movement,27,180,7
+746,746,1996,Greece,Ground movement,,,
+747,747,1996,Guatemala,Ash fall,,,
+748,748,1996,Iceland,Ash fall,,,16.5
+749,749,1996,Indonesia,Ground movement,175,423,5.4
+750,750,1996,Montserrat,Ash fall,,,
+751,751,1996,Papua New Guinea,Ash fall,4,29,
+752,752,1996,Peru,Ground movement,14,585,
+753,753,1996,Peru,Tsunami,7,2,
+754,754,1996,Turkey,Ground movement,,6,30
+755,755,1997,Afghanistan,Ground movement,5,,0.01
+756,756,1997,Armenia,Ground movement,,,33.333
+757,757,1997,Bangladesh,Ground movement,23,200,
+758,758,1997,Chile,Ground movement,8,98,48
+759,759,1997,China,Ground movement,32,224,
+760,760,1997,India,Ground movement,43,1500,37
+761,761,1997,Indonesia,Ash fall,1,,
+762,762,1997,Indonesia,Ground movement,20,300,1.1
+763,763,1997,Iran (Islamic Republic of),Ground movement,2768,7200,206
+764,764,1997,Italy,Ground movement,14,100,4524.9
+765,765,1997,Kyrgyzstan,Ground movement,,,2
+766,766,1997,Mexico,Ash fall,20,,
+767,767,1997,Mexico,Ground movement,1,,
+768,768,1997,Montserrat,Ash fall,32,,8
+769,769,1997,Pakistan,Ground movement,50,100,
+770,770,1997,South Africa,Ground movement,15,46,
+771,771,1997,Trinidad and Tobago,Ash fall,,,
+772,772,1997,Trinidad and Tobago,Ground movement,,2,25
+773,773,1997,Vanuatu,Tsunami,100,,
+774,774,1997,Venezuela (Bolivarian Republic of),Ground movement,80,683,81
+775,775,1998,Afghanistan,Ground movement,7023,2753,20
+776,776,1998,Albania,Ground movement,,,
+777,777,1998,Austria,Ground movement,,,
+778,778,1998,Azerbaijan,Ground movement,1,10,
+779,779,1998,Azores Islands,Ground movement,10,100,72
+780,780,1998,Bolivia (Plurinational State of),Ground movement,95,50,
+781,781,1998,China,Ground movement,55,13690,378.1
+782,782,1998,Costa Rica,Ash fall,,,
+783,783,1998,Ecuador,Ground movement,3,40,
+784,784,1998,Guatemala,Ash fall,,,
+785,785,1998,Indonesia,Ash fall,,,
+786,786,1998,Indonesia,Ground movement,34,88,200
+787,787,1998,Iran (Islamic Republic of),Ground movement,22,185,
+788,788,1998,Italy,Ground movement,,5,
+789,789,1998,Mexico,Ash fall,,,
+790,790,1998,Nicaragua,Ground movement,,3,
+791,791,1998,Pakistan,Ground movement,1,11,
+792,792,1998,Papua New Guinea,Tsunami,2182,668,
+793,793,1998,Slovenia,Ground movement,,,
+794,794,1998,Turkey,Ground movement,147,2616,550
+795,795,1999,Afghanistan,Ground movement,70,500,
+796,796,1999,Algeria,Ground movement,22,175,60.929
+797,797,1999,Azerbaijan,Ground movement,1,18,5
+798,798,1999,Bangladesh,Ground movement,6,200,
+799,799,1999,Cameroon,Ash fall,,,
+800,800,1999,China,Ground movement,,7,44
+801,801,1999,Colombia,Ground movement,1186,8563,1857.366
+802,802,1999,Ecuador,Ash fall,,,
+803,803,1999,Greece,Ground movement,143,2000,4200
+804,804,1999,Guatemala,Ground movement,2,40,
+805,805,1999,India,Ground movement,100,394,2
+806,806,1999,Indonesia,Ground movement,5,220,3.9
+807,807,1999,Iran (Islamic Republic of),Ground movement,21,100,
+808,808,1999,Mexico,Ash fall,,,
+809,809,1999,Mexico,Ground movement,46,415,391.6
+810,810,1999,Nicaragua,Ash fall,,,
+811,811,1999,Peru,Ground movement,1,80,1.1
+812,812,1999,Philippines (the),Ground movement,6,40,1.794
+813,813,1999,Russian Federation (the),Ground movement,1,20,0.9
+814,814,1999,Spain,Ground movement,,20,44.004
+815,815,1999,Taiwan (Province of China),Ground movement,2265,8918,14100.8
+816,816,1999,Turkey,Ground movement,17982,49792,21000
+817,817,1999,Vanuatu,Ground movement,12,100,
+818,818,2000,Azerbaijan,Ground movement,31,600,10
+819,819,2000,Bangladesh,Ground movement,,,
+820,820,2000,China,Ground movement,9,2791,116.983
+821,821,2000,Colombia,Ground movement,2,,
+822,822,2000,Greece,Ground movement,,,
+823,823,2000,Guatemala,Ash fall,,,
+824,824,2000,Iceland,Ground movement,,1,24
+825,825,2000,Indonesia,Ground movement,149,3108,73
+826,826,2000,Iran (Islamic Republic of),Ground movement,1,15,
+827,827,2000,Japan,Ash fall,,,
+828,828,2000,Japan,Ground movement,1,130,500
+829,829,2000,Mexico,Ash fall,,,
+830,830,2000,Mexico,Ground movement,,1,
+831,831,2000,Nicaragua,Ground movement,7,42,
+832,832,2000,Papua New Guinea,Ground movement,2,,
+833,833,2000,Philippines (the),Ash fall,,,2.214
+834,834,2000,Philippines (the),Landslide,11,,
+835,835,2000,Russian Federation (the),Ground movement,,8,0.92
+836,836,2000,Tajikistan,Ground movement,,,
+837,837,2000,"Tanzania, United Republic of",Ground movement,1,6,
+838,838,2000,Turkey,Ground movement,3,80,
+839,839,2000,Turkmenistan,Ground movement,11,,
+840,840,2000,United States of America (the),Ground movement,,70,50
+841,841,2001,Afghanistan,Ground movement,4,20,
+842,842,2001,China,Ground movement,8,1124,91
+843,843,2001,Congo (the Democratic Republic of the),Ash fall,,,
+844,844,2001,Ecuador,Ash fall,,,10.975
+845,845,2001,El Salvador,Ground movement,1159,8122,1848.5
+846,846,2001,Greece,Ground movement,,,
+847,847,2001,Guatemala,Ground movement,6,2,0.05
+848,848,2001,India,Ground movement,20005,166812,2623
+849,849,2001,Indonesia,Ground movement,,12,
+850,850,2001,Iran (Islamic Republic of),Ground movement,,,
+851,851,2001,Italy,Ash fall,,,3.1
+852,852,2001,Japan,Ground movement,2,161,500
+853,853,2001,Pakistan,Ground movement,12,100,0.5
+854,854,2001,Papua New Guinea,Ground movement,,1,
+855,855,2001,Peru,Ground movement,6,20,
+856,856,2001,Peru,Tsunami,145,2713,300
+857,857,2001,Philippines (the),Ash fall,,,2.58
+858,858,2001,"Tanzania, United Republic of",Ground movement,,,
+859,859,2001,Turkey,Ground movement,,176,
+860,860,2001,United States of America (the),Ground movement,1,400,2000
+861,861,2001,Vanuatu,Ash fall,,,
+862,862,2002,Afghanistan,Ground movement,1200,1391,
+863,863,2002,Argentina,Ground movement,,27,
+864,864,2002,China,Ground movement,2,,
+865,865,2002,Congo (the Democratic Republic of the),Ash fall,200,400,9
+866,866,2002,Ecuador,Ash fall,,,
+867,867,2002,Ecuador,Landslide,60,,
+868,868,2002,Egypt,Ground movement,,,
+869,869,2002,Georgia,Ground movement,6,70,350
+870,870,2002,Greece,Ground movement,,17,
+871,871,2002,Guatemala,Ash fall,,,
+872,872,2002,India,Ground movement,2,,
+873,873,2002,Indonesia,Ash fall,,,
+874,874,2002,Indonesia,Ground movement,3,108,
+875,875,2002,Indonesia,Tsunami,8,632,
+876,876,2002,Iran (Islamic Republic of),Ground movement,230,1406,300
+877,877,2002,Italy,Ground movement,32,42,1296
+878,878,2002,Mexico,Ash fall,,,
+879,879,2002,Pakistan,Ground movement,39,105,
+880,880,2002,Papua New Guinea,Ash fall,,,
+881,881,2002,Papua New Guinea,Ground movement,5,70,
+882,882,2002,Philippines (the),Ground movement,15,100,1.714
+883,883,2002,Rwanda,Ground movement,45,108,
+884,884,2002,Serbia Montenegro,Ground movement,1,100,
+885,885,2002,Taiwan (Province of China),Ground movement,4,200,25
+886,886,2002,Tajikistan,Ground movement,3,50,
+887,887,2002,"Tanzania, United Republic of",Ground movement,2,,
+888,888,2002,Turkey,Ground movement,42,327,95
+889,889,2002,Vanuatu,Ground movement,,3,
+890,890,2003,Afghanistan,Ground movement,1,1,
+891,891,2003,Algeria,Ground movement,2275,10461,5000
+892,892,2003,Bangladesh,Ground movement,2,25,
+893,893,2003,China,Ground movement,317,5954,500.933
+894,894,2003,Costa Rica,Ground movement,2,75,
+895,895,2003,Dominican Republic (the),Ground movement,3,15,
+896,896,2003,Ecuador,Ash fall,,,
+897,897,2003,Greece,Ground movement,,50,
+898,898,2003,Indonesia,Ground movement,1,9,
+899,899,2003,Iran (Islamic Republic of),Ground movement,26797,22739,521.666
+900,900,2003,Italy,Ground movement,,2,561.352
+901,901,2003,Japan,Ground movement,2,1485,1207
+902,902,2003,Kazakhstan,Ground movement,3,626,
+903,903,2003,Mexico,Ground movement,29,1073,116.3
+904,904,2003,Northern Mariana Islands (the),Ash fall,,,
+905,905,2003,Panama,Ground movement,2,75,
+906,906,2003,Russian Federation (the),Ground movement,3,5,10.6
+907,907,2003,Turkey,Ground movement,178,692,135
+908,908,2003,United States of America (the),Ground movement,2,40,200
+909,909,2004,Afghanistan,Ground movement,2,40,
+910,910,2004,Algeria,Ground movement,,315,
+911,911,2004,Bangladesh,Tsunami,2,,500
+912,912,2004,Burundi,Ground movement,3,,
+913,913,2004,China,Ground movement,4,731,124
+914,914,2004,China,Landslide,44,13,
+915,915,2004,Colombia,Ground movement,1,22,
+916,916,2004,Costa Rica,Ground movement,8,,
+917,917,2004,Dominica,Ground movement,,,
+918,918,2004,Germany,Ground movement,,,12
+919,919,2004,Guadeloupe,Ground movement,1,13,
+920,920,2004,India,Tsunami,16389,6913,1022.8
+921,921,2004,Indonesia,Ash fall,2,105,
+922,922,2004,Indonesia,Ground movement,108,1253,68
+923,923,2004,Indonesia,Tsunami,165708,,4451.6
+924,924,2004,Iran (Islamic Republic of),Ground movement,35,278,165
+925,925,2004,Japan,Ground movement,40,3183,28000
+926,926,2004,Kenya,Tsunami,1,,100
+927,927,2004,Malaysia,Tsunami,80,767,500
+928,928,2004,Maldives,Tsunami,102,2214,470.1
+929,929,2004,Morocco,Ground movement,628,926,400
+930,930,2004,Myanmar,Tsunami,71,,500
+931,931,2004,Pakistan,Ground movement,24,63,
+932,932,2004,Papua New Guinea,Ash fall,,,
+933,933,2004,Russian Federation (the),Ground movement,,,
+934,934,2004,Seychelles,Tsunami,3,,30
+935,935,2004,Slovenia,Ground movement,1,5,10
+936,936,2004,Somalia,Tsunami,298,283,100
+937,937,2004,Sri Lanka,Tsunami,35399,23176,1316.5
+938,938,2004,Tajikistan,Ground movement,,,
+939,939,2004,"Tanzania, United Republic of",Tsunami,10,,
+940,940,2004,Thailand,Tsunami,8345,8457,1000
+941,941,2004,Turkey,Ground movement,27,81,
+942,942,2005,Afghanistan,Ground movement,6,1,0.05
+943,943,2005,Chile,Ground movement,11,182,5
+944,944,2005,China,Ground movement,16,8009,
+945,945,2005,Colombia,Ash fall,,,
+946,946,2005,Comoros (the),Ash fall,1,,
+947,947,2005,Congo (the Democratic Republic of the),Ground movement,6,5,
+948,948,2005,El Salvador,Ash fall,2,,
+949,949,2005,El Salvador,Ground movement,1,1,
+950,950,2005,Ethiopia,Ash fall,,,
+951,951,2005,India,Ground movement,1309,6622,1000
+952,952,2005,Indonesia,Ash fall,,,
+953,953,2005,Indonesia,Ground movement,916,1150,
+954,954,2005,Iran (Islamic Republic of),Ground movement,625,1621,80
+955,955,2005,Japan,Ground movement,1,793,400
+956,956,2005,Pakistan,Ground movement,73338,128309,5200
+957,957,2005,Papua New Guinea,Ash fall,,,
+958,958,2005,Papua New Guinea,Ground movement,1,,
+959,959,2005,Peru,Ground movement,5,59,0.05
+960,960,2005,South Africa,Ground movement,2,58,20
+961,961,2005,"Tanzania, United Republic of",Ground movement,2,,
+962,962,2005,Turkey,Ground movement,2,94,
+963,963,2005,Vanuatu,Ash fall,,,
+964,964,2006,Afghanistan,Ground movement,1,,
+965,965,2006,Algeria,Ground movement,4,9,
+966,966,2006,Bulgaria,Ground movement,,2,
+967,967,2006,China,Ground movement,23,143,7.191
+968,968,2006,China,Landslide,11,5,
+969,969,2006,Colombia,Ash fall,,,
+970,970,2006,Comoros (the),Ash fall,,,
+971,971,2006,Ecuador,Ash fall,5,13,150
+972,972,2006,El Salvador,Ground movement,,,
+973,973,2006,Indonesia,Ash fall,,,
+974,974,2006,Indonesia,Ground movement,5787,138097,3100
+975,975,2006,Indonesia,Tsunami,805,545,55
+976,976,2006,Iran (Islamic Republic of),Ground movement,63,1494,42.262
+977,977,2006,Kyrgyzstan,Ground movement,,,
+978,978,2006,Montserrat,Ash fall,,,
+979,979,2006,Mozambique,Ground movement,4,36,
+980,980,2006,Papua New Guinea,Ash fall,,,
+981,981,2006,Peru,Ash fall,,,
+982,982,2006,Philippines (the),Ash fall,,,
+983,983,2006,Russian Federation (the),Ground movement,,40,55
+984,984,2006,Taiwan (Province of China),Ground movement,2,42,
+985,985,2006,Tajikistan,Ground movement,3,19,22
+986,986,2006,United States of America (the),Ground movement,,10,150
+987,987,2006,Vanuatu,Ash fall,,,
+988,988,2007,Barbados,Ground movement,,1,
+989,989,2007,Brazil,Ground movement,1,6,
+990,990,2007,Chile,Ground movement,2,155,100
+991,991,2007,Chile,Tsunami,10,,
+992,992,2007,China,Ground movement,3,329,342
+993,993,2007,Colombia,Ash fall,,,
+994,994,2007,Colombia,Ground movement,,5,
+995,995,2007,Ethiopia,Ash fall,5,,
+996,996,2007,Honduras,Ground movement,,18,
+997,997,2007,Indonesia,Ash fall,,,
+998,998,2007,Indonesia,Ground movement,95,2727,700
+999,999,2007,Japan,Ground movement,10,1371,12750
+1000,1000,2007,Martinique,Ground movement,1,100,
+1001,1001,2007,Peru,Ground movement,593,1366,600
+1002,1002,2007,Philippines (the),Ash fall,,,
+1003,1003,2007,Russian Federation (the),Ground movement,2,12,420
+1004,1004,2007,Saint Lucia,Ground movement,,,
+1005,1005,2007,Solomon Islands,Tsunami,52,9,
+1006,1006,2007,Tajikistan,Ground movement,11,3,
+1007,1007,2007,United Kingdom of Great Britain and Northern Ireland (the),Ground movement,,1,60
+1008,1008,2007,Yemen,Ash fall,6,15,
+1009,1009,2008,Argentina,Ash fall,,,
+1010,1010,2008,Chile,Ash fall,,,
+1011,1011,2008,China,Ground movement,87564,368412,85492
+1012,1012,2008,Colombia,Ash fall,16,7,
+1013,1013,2008,Colombia,Ground movement,11,54,10
+1014,1014,2008,Colombia,Landslide,12,,
+1015,1015,2008,Congo (the Democratic Republic of the),Ground movement,11,,7
+1016,1016,2008,Egypt,Rockfall,98,72,
+1017,1017,2008,Greece,Ground movement,2,240,
+1018,1018,2008,Indonesia,Ash fall,,,
+1019,1019,2008,Indonesia,Ground movement,11,162,
+1020,1020,2008,Iran (Islamic Republic of),Ground movement,6,215,
+1021,1021,2008,Japan,Ground movement,24,648,277
+1022,1022,2008,Kyrgyzstan,Ground movement,74,142,
+1023,1023,2008,Pakistan,Ground movement,166,320,10
+1024,1024,2008,Papua New Guinea,--,10,,
+1025,1025,2008,Russian Federation (the),Ground movement,13,100,
+1026,1026,2008,Rwanda,Ground movement,36,643,
+1027,1027,2008,United States of America (the),Ground movement,,3,
+1028,1028,2008,Vanuatu,Ash fall,,,
+1029,1029,2009,Afghanistan,Ground movement,22,59,
+1030,1030,2009,Albania,Ground movement,,,
+1031,1031,2009,American Samoa,Tsunami,34,,
+1032,1032,2009,Bhutan,Ground movement,11,12,
+1033,1033,2009,China,Ground movement,1,336,318.1
+1034,1034,2009,Costa Rica,Ground movement,31,91,200
+1035,1035,2009,Georgia,Ground movement,,6,
+1036,1036,2009,Guatemala,Landslide,36,,
+1037,1037,2009,Honduras,Ground movement,7,136,100
+1038,1038,2009,Indonesia,Ground movement,1330,3654,2381.43
+1039,1039,2009,Iran (Islamic Republic of),Ground movement,,269,
+1040,1040,2009,Italy,Ground movement,295,1000,2500
+1041,1041,2009,Japan,Tsunami,1,319,400
+1042,1042,2009,Malawi,Ground movement,4,186,
+1043,1043,2009,Philippines (the),Ash fall,,,
+1044,1044,2009,Philippines (the),Ground movement,,2,0.09
+1045,1045,2009,Samoa,Tsunami,148,310,124.04
+1046,1046,2009,Tonga,Tsunami,9,7,9.5
+1047,1047,2009,Vanuatu,Ash fall,,,
+1048,1048,2010,Afghanistan,Ground movement,11,70,
+1049,1049,2010,Chile,Tsunami,562,10334,30000
+1050,1050,2010,China,Ground movement,2977,12049,504.4
+1051,1051,2010,Ecuador,Ash fall,,,
+1052,1052,2010,Guatemala,Ash fall,,,
+1053,1053,2010,Haiti,Ground movement,222570,300000,8000
+1054,1054,2010,Iceland,Ash fall,,,
+1055,1055,2010,Indonesia,Ash fall,323,455,
+1056,1056,2010,Indonesia,Ground movement,17,,
+1057,1057,2010,Indonesia,Tsunami,530,412,
+1058,1058,2010,Iran (Islamic Republic of),Ground movement,11,535,
+1059,1059,2010,Mexico,Ground movement,2,232,1150
+1060,1060,2010,New Zealand,Ground movement,,2,6500
+1061,1061,2010,Philippines (the),Ash fall,,,
+1062,1062,2010,Serbia,Ground movement,2,120,132.26
+1063,1063,2010,Solomon Islands,Ground movement,,1,
+1064,1064,2010,Taiwan (Province of China),Ground movement,,96,1000
+1065,1065,2010,Tajikistan,Ground movement,,,1.5
+1066,1066,2010,Turkey,Ground movement,51,100,
+1067,1067,2010,United States of America (the),Ground movement,,30,12.5
+1068,1068,2011,Argentina,Ash fall,,,104
+1069,1069,2011,Bhutan,Ground movement,1,16,
+1070,1070,2011,Chile,Ash fall,,,
+1071,1071,2011,China,Ground movement,32,433,346.4
+1072,1072,2011,Guatemala,Ground movement,3,,
+1073,1073,2011,India,Ground movement,112,200,
+1074,1074,2011,Indonesia,Ash fall,3,5,
+1075,1075,2011,Indonesia,Ground movement,10,,5.85
+1076,1076,2011,Indonesia,Tsunami,1,,
+1077,1077,2011,Japan,Ground movement,2,132,
+1078,1078,2011,Japan,Tsunami,19846,5933,210000
+1079,1079,2011,Kyrgyzstan,Ground movement,,,
+1080,1080,2011,Mexico,Ground movement,2,2,
+1081,1081,2011,Myanmar,Ground movement,74,125,3.6
+1082,1082,2011,Nepal,Ground movement,7,89,
+1083,1083,2011,New Zealand,Ground movement,182,1545,18000
+1084,1084,2011,Pakistan,Ground movement,2,,
+1085,1085,2011,Peru,Ground movement,1,106,
+1086,1086,2011,Philippines (the),Ash fall,,,
+1087,1087,2011,Philippines (the),Ground movement,,3,
+1088,1088,2011,Spain,Ground movement,10,300,200
+1089,1089,2011,Tajikistan,Ground movement,,,
+1090,1090,2011,Thailand,Ground movement,1,16,
+1091,1091,2011,Turkey,Ground movement,647,4303,1744
+1092,1092,2011,Uzbekistan,Ground movement,13,,
+1093,1093,2012,Afghanistan,Ground movement,73,2,
+1094,1094,2012,Azerbaijan,Ground movement,,50,
+1095,1095,2012,Bulgaria,Ground movement,,70,
+1096,1096,2012,Chile,Ground movement,1,14,100
+1097,1097,2012,China,Ground movement,86,37910,1548
+1098,1098,2012,Costa Rica,Ground movement,2,225,45
+1099,1099,2012,Guatemala,Ash fall,,,
+1100,1100,2012,Guatemala,Ground movement,44,178,210
+1101,1101,2012,India,Avalanche,16,,
+1102,1102,2012,Indonesia,Ground movement,13,150,
+1103,1103,2012,Iran (Islamic Republic of),Ground movement,312,2267,500
+1104,1104,2012,Italy,Ground movement,24,400,15800
+1105,1105,2012,Mexico,Ground movement,2,11,320
+1106,1106,2012,Myanmar,Ground movement,38,231,1.17
+1107,1107,2012,Peru,Ground movement,,145,
+1108,1108,2012,Philippines (the),Ground movement,114,123,12.144
+1109,1109,2012,Tajikistan,Ground movement,2,,
+1110,1110,2013,Afghanistan,Ground movement,18,141,
+1111,1111,2013,China,Ground movement,296,15762,8055.3
+1112,1112,2013,China,Landslide,46,2,8
+1113,1113,2013,Colombia,Ground movement,,15,4
+1114,1114,2013,El Salvador,Ash fall,,,
+1115,1115,2013,Guatemala,Ground movement,1,52,2
+1116,1116,2013,Hungary,Ground movement,,,
+1117,1117,2013,India,Ground movement,3,70,120
+1118,1118,2013,Indonesia,Ash fall,,,
+1119,1119,2013,Indonesia,Ground movement,50,2550,130
+1120,1120,2013,Iran (Islamic Republic of),Ground movement,45,997,600
+1121,1121,2013,Japan,Ground movement,,32,
+1122,1122,2013,New Zealand,Ground movement,,4,50
+1123,1123,2013,Pakistan,Ground movement,462,824,100
+1124,1124,2013,Peru,Ash fall,,,
+1125,1125,2013,Peru,Ground movement,,29,
+1126,1126,2013,Philippines (the),Ground movement,230,976,51.459
+1127,1127,2013,Solomon Islands,Tsunami,10,,2
+1128,1128,2013,Taiwan (Province of China),Ground movement,5,116,2.1
+1129,1129,2014,Algeria,Ground movement,6,420,
+1130,1130,2014,Cabo Verde,Lava flow,,,
+1131,1131,2014,Chile,Ground movement,6,,100
+1132,1132,2014,China,Ground movement,738,3905,5640
+1133,1133,2014,Comoros (the),Ground movement,,,
+1134,1134,2014,Ecuador,Ground movement,3,18,
+1135,1135,2014,Greece,Ground movement,3,25,628
+1136,1136,2014,Guatemala,Ground movement,1,274,
+1137,1137,2014,Indonesia,Ash fall,39,72,186
+1138,1138,2014,Iran (Islamic Republic of),Ground movement,1,280,45
+1139,1139,2014,Japan,--,63,69,
+1140,1140,2014,Japan,Ground movement,,41,2
+1141,1141,2014,Mexico,Ground movement,3,,
+1142,1142,2014,Nicaragua,Ground movement,2,266,3
+1143,1143,2014,Papua New Guinea,Ash fall,,,
+1144,1144,2014,Peru,Ground movement,8,4,
+1145,1145,2014,Philippines (the),--,,,
+1146,1146,2014,South Africa,Ground movement,1,2,
+1147,1147,2014,Thailand,Ground movement,1,23,62
+1148,1148,2014,Turkey,Ground movement,,324,
+1149,1149,2014,United States of America (the),Ground movement,1,250,700
+1150,1150,2015,Afghanistan,Ground movement,115,58092,
+1151,1151,2015,Argentina,Ash fall,,,
+1152,1152,2015,Bangladesh,Ground movement,4,200,
+1153,1153,2015,Chile,Ash fall,,,600
+1154,1154,2015,Chile,Tsunami,19,15,800
+1155,1155,2015,China,Ground movement,33,678,32.85
+1156,1156,2015,Colombia,Ground movement,,1,
+1157,1157,2015,Congo (the Democratic Republic of the),Ground movement,3,30,
+1158,1158,2015,Costa Rica,Ash fall,,,
+1159,1159,2015,Ecuador,--,,,
+1160,1160,2015,Ecuador,Lava flow,,,
+1161,1161,2015,India,Ground movement,98,570,
+1162,1162,2015,Indonesia,Ground movement,,62,
+1163,1163,2015,Kyrgyzstan,Ground movement,,,12
+1164,1164,2015,Malaysia,Ground movement,24,10,0.002
+1165,1165,2015,Nepal,Ground movement,8969,20360,5174
+1166,1166,2015,Pakistan,Ground movement,283,1830,
+1167,1167,2015,Pakistan,Rockfall,13,,
+1168,1168,2015,Tajikistan,Ground movement,2,14,5
+1169,1169,2015,Timor-Leste,Ground movement,,3,4
+1170,1170,2016,Bangladesh,Ground movement,5,70,
+1171,1171,2016,China,Ground movement,3,,200.5
+1172,1172,2016,Ecuador,Ground movement,673,6361,2000
+1173,1173,2016,India,Ground movement,8,308,75
+1174,1174,2016,Indonesia,Ground movement,104,865,100
+1175,1175,2016,Italy,Ground movement,297,444,5400
+1176,1176,2016,Japan,Ground movement,58,2491,20100
+1177,1177,2016,Korea (the Republic of),Ground movement,,32,21
+1178,1178,2016,Macedonia (the former Yugoslav Republic of),Ground movement,,100,10
+1179,1179,2016,Myanmar,Ground movement,4,2,10
+1180,1180,2016,New Zealand,Tsunami,2,50,3900
+1181,1181,2016,Pakistan,Ground movement,6,42,
+1182,1182,2016,Peru,Ground movement,5,84,
+1183,1183,2016,Philippines (the),Ground movement,8,202,
+1184,1184,2016,Solomon Islands,Ground movement,,1,
+1185,1185,2016,Taiwan (Province of China),Ground movement,117,525,700
+1186,1186,2016,Tajikistan,Ground movement,,,
+1187,1187,2016,"Tanzania, United Republic of",Ground movement,17,440,458
+1188,1188,2016,Uganda,Ground movement,4,,
+1189,1189,2016,United States of America (the),Ground movement,,,20
+1190,1190,2017,China,Ground movement,37,552,533
+1191,1191,2017,Greece,Ground movement,3,131,
+1192,1192,2017,Guatemala,Ground movement,,2,
+1193,1193,2017,Indonesia,--,,,
+1194,1194,2017,Indonesia,Ground movement,4,36,
+1195,1195,2017,Iran (Islamic Republic of),Ground movement,449,9537,742
+1196,1196,2017,Iraq,Ground movement,10,469,
+1197,1197,2017,Italy,Ground movement,31,53,18
+1198,1198,2017,Korea (the Republic of),Ground movement,,57,
+1199,1199,2017,Kyrgyzstan,Ground movement,,,
+1200,1200,2017,Mexico,Ground movement,467,6250,8300
+1201,1201,2017,Philippines (the),Ground movement,11,650,20.338
+1202,1202,2017,Switzerland,Rockfall,8,,
+1203,1203,2017,Turkey,Ground movement,,360,
+1204,1204,2017,Vanuatu,Ash fall,,,
+1205,1205,2018,China,Ground movement,,24,79
+1206,1206,2018,El Salvador,Ground movement,,,
+1207,1207,2018,Guatemala,Pyroclastic flow ,425,27,
+1208,1208,2018,Haiti,Ground movement,17,421,
+1209,1209,2018,Indonesia,--,453,14059,250
+1210,1210,2018,Indonesia,Ash fall,,,
+1211,1211,2018,Indonesia,Ground movement,589,1754,904
+1212,1212,2018,Indonesia,Tsunami,4340,4400,1450
+1213,1213,2018,Iran (Islamic Republic of),Ground movement,2,1258,20
+1214,1214,2018,Japan,Ground movement,49,1097,4500
+1215,1215,2018,Mexico,Ground movement,,4,
+1216,1216,2018,Myanmar,Landslide,17,,
+1217,1217,2018,Papua New Guinea,--,,,
+1218,1218,2018,Papua New Guinea,Ground movement,181,300,61
+1219,1219,2018,Peru,Ground movement,2,139,
+1220,1220,2018,Philippines (the),Lava flow,,,3.564
+1221,1221,2018,Taiwan (Province of China),Ground movement,84,285,100
+1222,1222,2018,United States of America (the),Lava flow,,,500
+1223,1223,2018,Vanuatu,Ash fall,,,
+1224,1224,2019,Indonesia,Ground movement,9,45,
+1225,1225,2019,Italy,--,,28,115
+1226,1226,,,,,,
+1227,1227,,,,,,
