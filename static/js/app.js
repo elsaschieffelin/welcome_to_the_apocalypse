@@ -5,8 +5,8 @@
 
 // Leaflet basic layer
 let myMap = L.map("map-first", {
-    center: [45.52, -122.67],
-    zoom: 13
+    center: [16.04, -177.27],
+    zoom: 2
   });
   
   // Adding a tile layer (the background map image) to our map
