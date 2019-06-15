@@ -1,5 +1,6 @@
 // Reading data
 d3.csv("/data").then((data) => {
+  console.log(data);
 });
 
 
