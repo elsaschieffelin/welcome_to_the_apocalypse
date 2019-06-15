@@ -12,6 +12,7 @@ body {
     bottom: 0;
     height: 30px;
     text-align: center;
+    letter-spacing: 3px;    
 }
 
 #hr-footer {
@@ -25,6 +26,14 @@ body {
     background-size: cover;
     /* border-color: black; */
     border-radius: 0 !important;
+}
+
+.jumbotron h1 {
+    letter-spacing: 5px;
+}
+
+.jumbotron p {
+    letter-spacing: 2px;
 }
 
 #map-first {
