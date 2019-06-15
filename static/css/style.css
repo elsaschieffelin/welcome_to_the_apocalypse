@@ -19,8 +19,17 @@ body {
     border: 3px solid black;
 }
 
+.jumbotron {
+    /* https://ascienceenthusiast.com/totally-serious-prophecy-says-the-apocalypse-will-occur-in-2019-for-real-this-time-guys/ */
+    background-image: url(../image/jumbotron-img.jpg); 
+    background-size: cover;
+    /* border-color: black; */
+    border-radius: 0 !important;
+}
+
 #map-first {
     margin: auto;
     height: 100%;
     width: 90%;
 }
+
