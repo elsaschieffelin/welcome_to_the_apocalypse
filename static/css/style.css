@@ -1,9 +1,9 @@
-html, 
+html,
 body {
     margin: 0;
     padding: 0;
     height: 100%;
-    min-height: 100%;   
+    min-height: 100%;
 }
 
 #footer {
@@ -12,7 +12,7 @@ body {
     bottom: 0;
     height: 30px;
     text-align: center;
-    letter-spacing: 3px;    
+    letter-spacing: 3px;
 }
 
 #hr-footer {
@@ -22,7 +22,7 @@ body {
 
 .jumbotron {
     /* https://ascienceenthusiast.com/totally-serious-prophecy-says-the-apocalypse-will-occur-in-2019-for-real-this-time-guys/ */
-    background-image: url(../image/jumbotron-img.jpg); 
+    background-image: url(../image/jumbotron-img.jpg);
     background-size: cover;
     /* border-color: black; */
     border-radius: 0 !important;
@@ -39,6 +39,4 @@ body {
 #map-first {
     margin: auto;
     height: 100%;
-    width: 90%;
 }
-
