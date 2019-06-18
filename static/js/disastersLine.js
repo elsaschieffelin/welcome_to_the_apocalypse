@@ -140,7 +140,7 @@
       });
   };
 
-  d3.csv('multiline.csv')
+  d3.csv('data/naturaldisasters.csv')
     .then(data => {
       data.forEach(d => {
         d.Year = +d.Year;
