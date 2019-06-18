@@ -48,8 +48,20 @@ const earthquake_layer = new L.LayerGroup();
 const volcano_layer = new L.LayerGroup();
 const tsunami_layer = new L.LayerGroup();
 
-
-
+// Retrieve key for selected map
+d3.select('section')
+  .selectAll('label')
+  .on("change", function() {
+    
+    console.log(this);
+    // Key for selected map
+    let selText = d3.select(this)
+      .select('span')
+      .text();
+    console.log(selText);
+    
+    
+  });
 
 
 // var picnic_parks = L.geoJson(myJson, {filter: picnicFilter}).addTo(map);
