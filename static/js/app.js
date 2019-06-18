@@ -34,7 +34,7 @@ const baseMaps = {
 };
 
 // Create Leaflet map
-let myMap = L.map("map-first", {
+let myMap = L.map("map", {
   center: [48.10, -100.10],
   zoom: 3,
   layers: [gebco_color]
@@ -48,6 +48,9 @@ const earthquake_layer = new L.LayerGroup();
 const volcano_layer = new L.LayerGroup();
 const tsunami_layer = new L.LayerGroup();
 
+
+
+
 // Retrieve key for selected map
 d3.select('section')
   .selectAll('label')
@@ -58,10 +61,41 @@ d3.select('section')
     let selText = d3.select(this)
       .select('span')
       .text();
-    console.log(selText);
-    
+    console.log(selText);    
     
   });
+
+  // Event listener to change height and weight of death chart
+  d3.select("#chart-death")
+    .on("mouseover", function() {
+
+      d3.select(this)
+        .attr("class", "col-12 chart-selected");
+      
+      // More lines of codes here <-- //
+
+    }),
+
+    on("mouseout", function() {
+
+      d3.select(this)
+        .attr("class", "col-4");
+
+      // More lines of codes here <-- //        
+
+    });
+
+  // Event listener to change height and weight of house loss chart
+  d3.select("#chart-death")
+  .on("mouseover", function() {
+
+  }),
+
+  on("mouseout", function() {
+      
+  });
+
+
 
 
 // var picnic_parks = L.geoJson(myJson, {filter: picnicFilter}).addTo(map);
