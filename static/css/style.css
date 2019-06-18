@@ -40,3 +40,14 @@ body {
     margin: auto;
     height: 100%;
 }
+
+.leaflet-control-layers-expanded {
+    opacity: 0.9;    
+}
+
+.leaflet-control-layers-list {
+    padding-left: 20px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
