@@ -20,6 +20,8 @@
         <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
             integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
             crossorigin=""></script>
+        <!-- Plotly CDN -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <!-- Load Esri Leaflet from CDN -->
         <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
             integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
@@ -51,9 +53,9 @@
 
         <div class="container">
             <div class="row charts">
-                <div class="col-4" id="chart-death"></div>
-                <div class="col-4" id="chart-house"></div>
-                <div class="col-4" id="chart-economy"></div>
+                <div class="col-6" id="chart-death"></div>
+                <div class="col-6" id="chart-house"></div>
+                <div class="col-12" id="chart-economy"></div>
             </div>
         </div>
 
@@ -81,5 +83,6 @@
     <script src="{{ url_for('static', filename='js/config.js') }}"></script>
     <!-- app.js -->
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/deathByDisasters.js') }}"></script>
     </body>
 </html>

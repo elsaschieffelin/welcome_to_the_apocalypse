@@ -1,7 +1,7 @@
-// Reading data
-d3.csv("/data").then((data) => {
-  console.log(data);
-});
+// // Reading data
+// d3.csv("/data").then((data) => {
+//   console.log(data);
+// });
 
 // ************************* MAP CODE **************************************************
 // Define tile layers for basemap
@@ -51,49 +51,54 @@ const tsunami_layer = new L.LayerGroup();
 
 
 
-// Retrieve key for selected map
-d3.select('section')
-  .selectAll('label')
-  .on("change", function() {
+
+
+
+
+
+// // Retrieve key for selected map
+// d3.select('section')
+//   .selectAll('label')
+//   .on("change", function() {
     
-    console.log(this);
-    // Key for selected map
-    let selText = d3.select(this)
-      .select('span')
-      .text();
-    console.log(selText);    
+//     console.log(this);
+//     // Key for selected map
+//     let selText = d3.select(this)
+//       .select('span')
+//       .text();
+//     console.log(selText);    
     
-  });
+//   });
 
-  // Event listener to change height and weight of death chart
-  d3.select("#chart-death")
-    .on("mouseover", function() {
+  // // Event listener to change height and weight of death chart
+  // d3.select("#chart-death")
+  //   .on("mouseover", function() {
 
-      d3.select(this)
-        .attr("class", "col-12 chart-selected");
+  //     d3.select(this)
+  //       .attr("class", "col-12 chart-selected");
       
-      // More lines of codes here <-- //
+  //     // More lines of codes here <-- //
 
-    }),
+  //   }),
 
-    on("mouseout", function() {
+  //   on("mouseout", function() {
 
-      d3.select(this)
-        .attr("class", "col-4");
+  //     d3.select(this)
+  //       .attr("class", "col-4");
 
-      // More lines of codes here <-- //        
+  //     // More lines of codes here <-- //        
 
-    });
+  //   });
 
-  // Event listener to change height and weight of house loss chart
-  d3.select("#chart-death")
-  .on("mouseover", function() {
+  // // Event listener to change height and weight of house loss chart
+  // d3.select("#chart-death")
+  // .on("mouseover", function() {
 
-  }),
+  // }),
 
-  on("mouseout", function() {
+  // on("mouseout", function() {
       
-  });
+  // });
 
 
 
