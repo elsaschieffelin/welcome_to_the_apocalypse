@@ -43,8 +43,8 @@ def read():
       #data_dict['ID']=ID
       data_dict['YEAR']=year
       data_dict['COUNTRY']=country
-      #data_dict['LATITUDE']=lat
-      #data_dict['LONGITUDE']=long
+      data_dict['LATITUDE']=str(lat)
+      data_dict['LONGITUDE']=str(long)
       data_dict['DISASTER_TYPE']=disaster
       data_dict['HOUSES_AFFECTED']=houses
       data_dict['TOTAL_DEATHS']=deaths
