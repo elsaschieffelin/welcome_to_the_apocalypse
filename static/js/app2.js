@@ -1,9 +1,33 @@
+
+
+
+
+
 // Reading and filtering data
 d3.json("/data").then((data) => {
     eq_filt = data.filter(function (a) { return a.DISASTER_TYPE === 'earthquake'; });
     vol_filt = data.filter(function (a) { return a.DISASTER_TYPE === 'volcano'; });
     tsu_filt = data.filter(function (a) { return a.DISASTER_TYPE === 'tsunami'; });
     console.log(eq_filt, vol_filt, tsu_filt);
+    //Define icons
+
+    var tsunamiIcon = L.icon({
+        iconUrl: 'static/image/tsunami.png',
+        iconSize: [20,20]
+
+    });
+
+    var volcanoIcon = L.icon({
+        iconUrl: 'static/image/volcano.png',
+        iconSize: [20,20]
+
+    });
+
+    var earthquakeIcon = L.icon({
+        iconUrl: 'static/image/earthquake.png',
+        iconSize: [20,20]
+
+    });
 
     // Define earthquake layer
     // An array which will be used to store created eqmarkers
@@ -11,9 +35,8 @@ d3.json("/data").then((data) => {
 
     for (var i = 0; i < eq_filt.length; i++) {
       // loop through the earthquakes array and create new marker
-      eqMarkers.push
-      (L.marker(eq_filt[i].LOCATION).bindPopup("<p>" + "Year: "+ eq_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + eq_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + eq_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + eq_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + eq_filt[i].HOUSES_AFFECTED + "</p>")
-      );
+      eqMarkers.push(
+      L.marker(eq_filt[i].LOCATION, {icon: earthquakeIcon}).bindPopup("<p>" + "Year: "+ eq_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + eq_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + eq_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + eq_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + eq_filt[i].HOUSES_AFFECTED + "</p>"));
       }
     const earthquakeLayer = L.layerGroup(eqMarkers);
 
@@ -23,9 +46,8 @@ d3.json("/data").then((data) => {
     for (var i = 0; i < vol_filt.length; i++) {
       // loop through the earthquakes array and create new marker
       volMarkers.push
-      (L.marker(vol_filt[i].LOCATION).bindPopup("<p>" + "Year: "+ vol_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + vol_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + vol_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + vol_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + vol_filt[i].HOUSES_AFFECTED + "</p>")
-      );
-    }
+      (L.marker(vol_filt[i].LOCATION, {icon: volcanoIcon}).bindPopup("<p>" + "Year: "+ vol_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + vol_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + vol_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + vol_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + vol_filt[i].HOUSES_AFFECTED + "</p>"));
+      }
     const volcanoLayer = L.layerGroup(volMarkers);
 
 
@@ -35,9 +57,8 @@ d3.json("/data").then((data) => {
     for (var i = 0; i < tsu_filt.length; i++) {
       // loop through the earthquakes array and create new marker
       tsuMarkers.push(
-      L.marker(tsu_filt[i].LOCATION).bindPopup("<p>" + "Year: "+ tsu_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + tsu_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + tsu_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + tsu_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + tsu_filt[i].HOUSES_AFFECTED + "</p>")
-      );
-    }
+      L.marker(tsu_filt[i].LOCATION, {icon: tsunamiIcon}).bindPopup("<p>" + "Year: "+ tsu_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + tsu_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + tsu_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + tsu_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + tsu_filt[i].HOUSES_AFFECTED + "</p>"));
+      }
     const tsunamiLayer = L.layerGroup(tsuMarkers);
 
     // Define tile layers for basemap
