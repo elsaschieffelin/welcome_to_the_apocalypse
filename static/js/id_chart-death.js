@@ -105,8 +105,12 @@ d3.csv("static/data/death_by_disasters.csv").then((data) => {
             // hovermode: "closest",
             barmode: "stack",
             xaxis: {
+                title: "<b> <br>Decades</b>",
                 tickangle: -45
             },
+            yaxis: {
+                title: "<b>Number of Victims<br> </b>"           
+            },            
             title: {
                 text: "Annual Global Number of Deaths per Decade",
                 font: {
