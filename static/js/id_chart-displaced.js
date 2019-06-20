@@ -1,4 +1,4 @@
-d3.csv("static/data/homelessDisasters.csv").then((data)=>{
+d3.csv("static/data/homeless_disasters.csv").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.Displacedpersons = +row.Displacedpersons });
