@@ -22,6 +22,9 @@ base = automap_base()
 base.prepare(db.engine, reflect=True)
 master = base.classes.master_map
 
+
+
+
 # Home route
 @app.route('/')
 def index():
@@ -50,6 +53,37 @@ def read():
 
    return jsonify(all_data)
 
+#deaths csv route
+@app.route('/data_deaths')
+def die_data():
+   data = pd.read_csv('static/data/death_by_disasters.csv')
+   json_data = json.loads(data.to_json(orient='records'))
+   return jsonify(json_data)
+
+# economic costs csv
+@app.route('/data_money')
+def dollars(): 
+   data = pd.read_csv('static/data/economic_damage.csv')
+   jsoned = json.loads(data.to_json(orient='records'))
+   return jsonify(jsoned)
+
+#natural disaster csv
+@app.route('/data-disaster')
+def disasters():
+   data=pd.read_csv('static/data/natural_disasters.csv')
+   jsoned= json.loads(data.to_json(orient='records'))
+   return jsonify(jsoned)
+
+#homelessness csv
+@app.route('/data-homelessness')
+def homeless():
+   data=pd.read_csv('static/data/homeless_disasters.csv')
+   jsoned=json.loads(data.to_json(orient='records'))
+   return jsonify(jsoned)
+
 # Scripts execution
 if __name__ == "__main__":
     app.run()
+
+
+   
