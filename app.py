@@ -1,7 +1,5 @@
 # flask tools
 import json
-import os
-import geojson
 import pandas as pd
 import numpy as np
 import sqlalchemy
