@@ -3,7 +3,7 @@
     var parseYear = d3.timeParse("%Y");
     
     // Import data
-    d3.csv("static/data/economicdamage.csv")
+    d3.csv("static/data/economic_damage.csv")
         .then((data)=> { 
             data.forEach((row)=>{ 
                 // Parse Year and convert dollars to numbers
@@ -192,6 +192,7 @@
                     font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f" }
                 }
             },
+            hovermode: "closest",
             barmode: "stack",
 
         };

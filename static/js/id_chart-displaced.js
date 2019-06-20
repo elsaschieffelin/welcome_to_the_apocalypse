@@ -180,7 +180,7 @@ d3.csv("static/data/homeless_disasters.csv").then((data)=>{
         var layout = {
             title: {
                 text: "People Displaced Due to Reported Natural Disasters<br>(2000 to 2007)",
-                font: {family: "Courier New, monospace", size: 24, color: "#7f7f7f"}
+                font: {family: "Cabin Sketch", size: 25, color: "#7f7f7f"}
             },
             xaxis:{
                 title: {

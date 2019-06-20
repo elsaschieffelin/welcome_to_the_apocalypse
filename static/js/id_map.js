@@ -1,8 +1,3 @@
-
-
-
-
-
 // Reading and filtering data
 d3.json("/data").then((data) => {
     eq_filt = data.filter(function (a) { return a.DISASTER_TYPE === 'earthquake'; });
