@@ -1,6 +1,7 @@
 # flask tools
 import json
 import os
+import geojson
 import pandas as pd
 import numpy as np
 import sqlalchemy
@@ -15,17 +16,11 @@ from flask_sqlalchemy import SQLAlchemy
 # Create app
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///data/ap_db.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 base = automap_base()
 base.prepare(db.engine, reflect=True)
 master = base.classes.master_map
-
-#data = db.session.query(master.YEAR)
-#for i in data:
- #  print(i)
-#data = db.session.query(master.YEAR).all()
-#all_data = list(np.ravel(data))
-#print(all_data)
 
 # Home route
 @app.route('/')
@@ -43,25 +38,17 @@ def read():
       #data_dict['ID']=ID
       data_dict['YEAR']=year
       data_dict['COUNTRY']=country
-      data_dict['LATITUDE']=str(lat)
-      data_dict['LONGITUDE']=str(long)
+      data_dict['LATITUDE']=float(lat)
+      data_dict['LONGITUDE']=float(long)
       data_dict['DISASTER_TYPE']=disaster
       data_dict['HOUSES_AFFECTED']=houses
       data_dict['TOTAL_DEATHS']=deaths
       data_dict['TOTAL_INJURIES']=injured
       data_dict['TOTAL_DAMAGE_MILLIONS_DOLLARS']=dollars
+      data_dict['LOCATION']=([lat, long])
       all_data.append(data_dict)
 
    return jsonify(all_data)
-
-@app.route('/map-data')
-def readMap():
-   with open (data, 'r') as file: 
-      
-      data = file.read()
-      (os.path.join('data/master_map.json'), 'r')
-   print(data)
-   return jsonify(data)
 
 # Scripts execution
 if __name__ == "__main__":
