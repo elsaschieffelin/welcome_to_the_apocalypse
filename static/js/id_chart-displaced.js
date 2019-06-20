@@ -1,180 +1,206 @@
-d3.csv("static/data/homelessDisasters.csv").then((data)=>{
-
+d3.csv("homelessDisasters.csv").then((data)=>{
+    
     // Change displaced persons to a number
     data.forEach((row)=>{ row.Displacedpersons = +row.Displacedpersons });
     console.log(data);
 
     // create a lookup table to sort and regroup the columns of data,
     // first by year, then by type of disaster
-    var lookup = {};
+        // Filter Disasters by type
+        let allDisasters = data.filter(d => d.Entity === "All natural disasters");
+        let drought = data.filter(d => d.Entity === "Drought");
+        let quake = data.filter(d => d.Entity === "Earthquake");
+        let temp = data.filter(d => d.Entity === "Extreme temperature");
+        let weather = data.filter(d => d.Entity === "Extreme weather");
+        let flood = data.filter(d => d.Entity === "Flood");
+        let landSlide = data.filter(d => d.Entity === "Landslide");
+        let volcanic = data.filter(d => d.Entity === "Volcanic activity");
+        let wildfire = data.filter(d => d.Entity === "Wildfire");
+        let mass = data.filter(d => d.Entity === "Mass movement (dry)")
 
-    function getData(year, disaster) {
-        var byYear, trace; 
+        // store years for each Disaster type and the corresponding Economic damage for that year in an array
+        let allYear = [];
+        let droughYear = [];
+        let quakeYear = [];
+        let tempYear = [];
+        let weatherYear = [];
+        let floodYear = [];
+        let slideYear = [];
+        let volcYear = [];
+        let wildYear = [];
+        let massYear = [];
 
-        if(!(byYear = lookup[year])) {
-            byYear = lookup[year] = {};
+        let allDam = [];
+        let droughtDam =[];
+        let quakeDam = [];
+        let tempDam = [];
+        let weatherDam = [];
+        let floodDam = [];
+        let slideDam = [];
+        let volcDam = [];
+        let wildDam = [];
+        let massDam = [];
+        
+        // Create loops to loop over filtered datasets and push to desired year and economic damage arrays
+        
+        // All Disasters
+        allDisasters.forEach((d) =>{ 
+            allYear.push(d.Year)
+            allDam.push(d.Displacedpersons)
+        });
+        // Drought
+        drought.forEach((d) => {
+            droughYear.push(d.Year)
+            droughtDam.push(d.Displacedpersons)
+        });
+        // Earthquake
+        quake.forEach((d) => {
+            quakeYear.push(d.Year)
+            quakeDam.push(d.Displacedpersons)
+        });
+        // Extreme Temperature
+        temp.forEach((d) => {
+            tempYear.push(d.Year)
+            tempDam.push(d.Displacedpersons)
+        });
+        // Extreme Weather
+        weather.forEach((d) => {
+            weatherYear.push(d.Year)
+            weatherDam.push(d.Displacedpersons)
+        });
+        // Flood
+        flood.forEach((d) => {
+            floodYear.push(d.Year)
+            floodDam.push(d.Displacedpersons)
+        });
+        // Landslide
+        landSlide.forEach((d) => {
+            slideYear.push(d.Year)
+            slideDam.push(d.Displacedpersons)
+        });
+        // Volcanic
+        volcanic.forEach((d) => {
+            volcYear.push(d.Year)
+            volcDam.push(d.Displacedpersons)
+        });
+        // Wildfire
+        wildfire.forEach((d) => {
+            wildYear.push(d.Year)
+            wildDam.push(d.Displacedpersons)
+        });
+        // Mass movement (dry)
+        mass.forEach((d) => {
+            massYear.push(d.Year)
+            massDam.push(d.Displacedpersons)
+        });
+
+        // console.log(allYear, allDam);
+
+        // Create traces and plot
+
+        var trace1 = {
+            x: allYear,
+            y: allDam,
+            name: "All Disasters",
+            type: "line+scatter"
         };
 
-        // If a container for this year and type of disaster doesn't exit, create one
-        if(!(trace = byYear[disaster])) {
-            trace = byYear[disaster] = {
-                x: [],
-                y: [],
-                id: [],
-                text: [],
-                marker: {size: []}
+        var trace2 = {
+            x: droughYear,
+            y: droughtDam,
+            name: "Drought",
+            type: "line+scatter"
 
-            };
         };
+
+        var trace3 = {
+            x: quakeYear,
+            y: quakeDam,
+            name: "Earthquake",
+            type: "line+scatter"
+        };
+
+        var trace4 = {
+            x: tempYear,
+            y: tempDam,
+            name: "Extreme Temperature",
+            type: "line+scatter"
+        };
+
+        var trace5 = {
+            x: weatherYear,
+            y: weatherDam,
+            name: "Extreme Weather",
+            type: "line+scatter"
+        };
+
+        var trace6 = {
+            x: floodYear,
+            y: floodDam,
+            name: "Flood",
+            type: "line+scatter"
+        };
+
+        var trace7 = {
+            x: slideYear,
+            y: slideDam,
+            name: "Landslide",
+            type: "line+scatter"
+        };
+
+        var trace8 = {
+            x: volcYear,
+            y: volcDam,
+            name: "Volcanic Activity",
+            type: "line+scatter"
+        };
+
+        var trace9 = {
+            x: wildYear,
+            y: wildDam,
+            name: "Wildfire",
+            type: "line+scatter"
+        };
+
+        var trace10 = {
+            x: massYear,
+            y: massDam,
+            name: "Earthquake",
+            type: "line+scatter"
+        };
+
+        var plotData = [trace2,trace3,trace4,trace5,trace6,trace7,trace8, trace9,trace10, trace1] 
+
+        // Animate
+
+        console.log(plotData);
+
+        // Modify the layout
         
-        return trace;
-    };
-
-    // Go through each row, get the right trace, and append the data
-    data.forEach((d)=>{
-        var trace = getData(d.Year, d.Entity);
-        trace.text.push(d.Entity);
-        trace.id.push(d.Displacedpersons);
-        trace.x.push(d.Year);
-        trace.y.push(d.Displacedpersons);
-        trace.marker.size.push(d.Displacedpersons/100);
-    });
-
-    // Get group names
-    var years = Object.keys(lookup);
-
-    // IN our case, ever year doesn't include every disaster so we have to
-    // infer disasters for each year
-    console.log(years);
-
-    var firstYear, disasterTypes;
-    
-    firstYear = lookup[years[10]];
-    disasterTypes = Object.keys(firstYear);
-
-    // create the main traces, one for each continent:
-    var traces = [];
-
-    disasterTypes.forEach((disaster)=> {
-        var data = firstYear[disaster];
-        // NOTE: we're creating a single trace per disaster per year
-        // the frames will pass data for the different years.
-        traces.push({
-            name: disaster,
-            x: data.x.slice(),
-            y: data.y.slice(),
-            id: data.id.slice(),
-            text: data.text.slice(),
-            mode: 'markers',
-            hoverinfo: "text",
-            marker: {
-                size: data.marker.size.slice(),
-                sizemode: 'area',
-                sizeref: 2
-            }
-        });
-    });
-
-    // Create a frame for each year. Frames are just traces, except they don't need to contain the "full" trace
-    // Frames just need the parts of the traces that change (here, the data)
-    var frames = [];
-
-    years.forEach((year) => {
-        frames.push({
-            name: year,
-            data: disasterTypes.map((disaster)=> { return getData(year, disaster); })
-            
-        });
-    });
-
-    // Now we have to create slider steps, one for each frame. The slider executes a plotly.js API command (Plotly.animate)
-    
-    var sliderSteps = [];
-    years.forEach((year)=> {
-        sliderSteps.push({
-            method: "animate",
-            label: year,
-            args: [[year],
-                {
-                    mode: "immediate",
-                    transition: {duration: 300},
-                    frame: {duration: 300, redraw: false},
-                }]
-        });
-    });
-
-    var layout = {
-        legend: {
-            itemsizing: "constant"
-        },
-        title: {
-            text: "Persons Displaced by Natural Disasters (by Type)",
-            font: {
-                family: "Cabin Sketch",
-                size: 25
-            }
-        },
-        
-        xaxis: {
-
-            title: "Years",
-            range: [1997, 2020]
-
-        },
-        yaxis: {
-            title: "Number of Displaced Persons",
-            type: 'log',
-            // range: [-100,10000000]
-            
-        },
-        hovermode: "closest",
-        updatemenus: [{
-            x: 0,
-            y: 0,
-            yanchor: 'top',
-            xanchor: 'left',
-            showactive: false,
-            direction: 'left',
-            type: 'buttons',
-            pad: {t: 87, r: 10},
-            buttons: [{
-                method: 'animate',
-                args: [null, {
-                mode: 'immediate',
-                fromcurrent: true,
-                transition: {duration: 300},
-                frame: {duration: 500, redraw: false}
-            }],
-            label: 'Play'
-            }, {
-                method: 'animate',
-                args: [[null], {
-                mode: 'immediate',
-                transition: {duration: 0},
-                frame: {duration: 0, redraw: false}
-            }],
-            label: 'Pause'
-            }]
-        }],
-
-        //Add the slider and use 'pad' to position it nice next to the buttons.
-        sliders: [{
-            pad: {l: 130, t: 55},
-            currentvalue: {
-            visible: true,
-            prefix: 'Year:',
-            xanchor: 'right',
-            font: {size: 20, color: '#666'}
+        var layout = {
+            title: {
+                text: "People Displaced Due to Reported Natural Disasters<br>(2000 to 2007)",
+                font: {family: "Courier New, monospace", size: 24, color: "#7f7f7f"}
             },
-            steps: sliderSteps
-        }]
-    };
+            xaxis:{
+                title: {
+                    text: "Year",
+                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f"}                    
+                }
+            },
+            yaxis: {
+                title: {
+                    text: "People Displaced (in millions)", 
+                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f" }
+                }
+            },
+           
+            hovermode: "closest"
 
-    // Create the plot
-    Plotly.plot("chart-displaced",{
-        data: traces,
-        layout: layout,
-        frames: frames
+        };
+
+
+        Plotly.plot("displaced", plotData, layout, {responsive: true}, {paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)"});
     });
 
-});
+
