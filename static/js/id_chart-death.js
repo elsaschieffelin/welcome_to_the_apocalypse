@@ -7,23 +7,29 @@ d3.csv("static/data/death_by_disasters.csv").then((data) => {
     // Event listener to update and re-plot the chart in "col-12" when mouse is moved over the chart
     d3.select("#chart-death").on("click", function() {
 
-        // Check whether current chart occupies 6 or 12 cols
-        // If it occupies 6 cols, set it to 12, vice versa
-        if (d3.select(this).attr("class").slice(4,5) === "6") {
+        // If not clicking on the scrollbox of the chart ...
+        // https://stackoverflow.com/questions/152975/how-do-i-detect-a-click-outside-an-element
+        if (!$(event.target).closest(".scrollbox").length) {
 
-            // Change "col-6" to "col-12" in "class" when activated
-            d3.select(this)
-                .attr("class", "col-12 mt-5")
-                .attr("id", "chart-death")
-                .html("");
-        
-        } else {
+            // Check whether current chart occupies 6 or 12 cols
+            // If it occupies 6 cols, set it to 12, vice versa
+            if (d3.select(this).attr("class").slice(4,5) === "6") {
 
-            // Change "col-12" to "col-6" in "class" when activated
-            d3.select(this)
-                .attr("class", "col-6 mt-5")
-                .attr("id", "chart-death")
-                .html("");
+                // Change "col-6" to "col-12" in "class" when activated
+                d3.select(this)
+                    .attr("class", "col-12 mt-5")
+                    .attr("id", "chart-death")
+                    .html("");
+            
+            } else {
+
+                // Change "col-12" to "col-6" in "class" when activated
+                d3.select(this)
+                    .attr("class", "col-6 mt-5")
+                    .attr("id", "chart-death")
+                    .html("");
+
+            }
 
         }
 
