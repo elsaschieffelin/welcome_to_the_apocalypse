@@ -3,7 +3,7 @@
     var parseYear = d3.timeParse("%Y");
     
     // Import data
-    d3.csv("economicdamage.csv")
+    d3.csv("static/data/economicdamage.csv")
         .then((data)=> { 
             data.forEach((row)=>{ 
                 // Parse Year and convert dollars to numbers
@@ -178,7 +178,7 @@
         var layout = {
             title: {
                 text: "Economic Damage Due to Reported Natural Disasters",
-                font: {family: "Courier New, monospace", size: 24, color: "#7f7f7f"}
+                font: {family: "Cabin Sketch", size: 25, color: "#7f7f7f"}
             },
             xaxis:{
                 title: {
@@ -197,7 +197,7 @@
         };
 
 
-        Plotly.newPlot("damageBar", plotData, layout, {showSendToCloud: true});
+        Plotly.newPlot("chart-cost", plotData, layout, {showSendToCloud: true});
         });
 
 

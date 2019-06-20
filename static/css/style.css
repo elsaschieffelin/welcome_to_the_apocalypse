@@ -54,8 +54,3 @@ body {
     font-weight: bold;
 }
 
-/* Var need to be unified */
-.chart-selected {
-    width: 800;
-    height: 600;
-}

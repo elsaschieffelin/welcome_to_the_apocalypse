@@ -1,0 +1,115 @@
+Entity,Year,Displacedpersons
+All natural disasters,2000,1766425
+All natural disasters,2001,3113696
+All natural disasters,2002,354875
+All natural disasters,2003,2900670
+All natural disasters,2004,2577923
+All natural disasters,2005,6266457
+All natural disasters,2006,6203123
+All natural disasters,2007,1169731
+All natural disasters,2008,3242535
+All natural disasters,2009,510312
+All natural disasters,2010,2423997
+All natural disasters,2011,1964972
+All natural disasters,2012,950345
+All natural disasters,2013,328923
+All natural disasters,2014,1364787
+All natural disasters,2015,619992
+All natural disasters,2016,2459745
+All natural disasters,2017,312859
+Drought,2017,0
+Earthquake,2000,377229
+Earthquake,2001,2243015
+Earthquake,2002,58534
+Earthquake,2003,645314
+Earthquake,2004,1177207
+Earthquake,2005,5151700
+Earthquake,2006,844990
+Earthquake,2007,86833
+Earthquake,2008,417140
+Earthquake,2009,128960
+Earthquake,2010,912204
+Earthquake,2011,202752
+Earthquake,2012,29002
+Earthquake,2013,14540
+Earthquake,2014,24070
+Earthquake,2015,195230
+Earthquake,2016,29741
+Earthquake,2017,8066
+Extreme temperature,2011,233000
+Extreme temperature,2013,5247
+Extreme temperature,2017,0
+Extreme weather,2000,445461
+Extreme weather,2001,506905
+Extreme weather,2002,46820
+Extreme weather,2003,493057
+Extreme weather,2004,940895
+Extreme weather,2005,412268
+Extreme weather,2006,620483
+Extreme weather,2007,106209
+Extreme weather,2008,273373
+Extreme weather,2009,245872
+Extreme weather,2010,777608
+Extreme weather,2011,297752
+Extreme weather,2012,694147
+Extreme weather,2013,54882
+Extreme weather,2014,74621
+Extreme weather,2015,234269
+Extreme weather,2016,163170
+Extreme weather,2017,109013
+Flood,2000,793068
+Flood,2001,327831
+Flood,2002,96952
+Flood,2003,1760451
+Flood,2004,457117
+Flood,2005,700349
+Flood,2006,4638942
+Flood,2007,970247
+Flood,2008,2547797
+Flood,2009,112870
+Flood,2010,670720
+Flood,2011,1209286
+Flood,2012,222538
+Flood,2013,246991
+Flood,2014,1257973
+Flood,2015,165658
+Flood,2016,2253027
+Flood,2017,190054
+Landslide,2000,148290
+Landslide,2001,35945
+Landslide,2002,37482
+Landslide,2003,513
+Landslide,2004,150
+Landslide,2005,390
+Landslide,2006,98300
+Landslide,2009,20743
+Landslide,2010,59195
+Landslide,2011,2000
+Landslide,2012,3368
+Landslide,2014,7865
+Landslide,2015,11590
+Landslide,2016,5000
+Landslide,2017,2315
+Mass movement (dry),2004,340
+Mass movement (dry),2008,625
+Mass movement (dry),2009,991
+Volcanic activity,2002,110000
+Volcanic activity,2011,6000
+Volcanic activity,2017,0
+Wildfire,2000,2377
+Wildfire,2002,5087
+Wildfire,2003,1335
+Wildfire,2004,2214
+Wildfire,2005,1750
+Wildfire,2006,408
+Wildfire,2007,6442
+Wildfire,2008,3600
+Wildfire,2009,876
+Wildfire,2010,4270
+Wildfire,2011,14182
+Wildfire,2012,1290
+Wildfire,2013,7263
+Wildfire,2014,258
+Wildfire,2015,13245
+Wildfire,2016,8807
+Wildfire,2017,3411

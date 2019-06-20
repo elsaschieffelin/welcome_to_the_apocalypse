@@ -54,8 +54,8 @@
         <div class="container">
             <div class="row charts">
                 <div class="col-6 mt-5" id="chart-death"></div>
-                <div class="col-6 mt-5" id="chart-house"></div>
-                <div class="col-12 mt-5" id="chart-economy"></div>
+                <div class="col-6 mt-5" id="chart-displaced"></div>
+                <div class="col-12 mt-5" id="chart-cost"></div>
             </div>
         </div>
 
@@ -82,7 +82,9 @@
     <!-- API key -->
     <script src="{{ url_for('static', filename='js/config.js') }}"></script>
     <!-- app.js -->
-    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/deathByDisasters.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_chart-death.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_chart-displaced.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_chart-cost.js') }}"></script>
     </body>
 </html>
