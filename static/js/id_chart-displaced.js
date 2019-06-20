@@ -1,4 +1,4 @@
-d3.csv("homelessDisasters.csv").then((data)=>{
+d3.csv("static/data/homelessDisasters.csv").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.Displacedpersons = +row.Displacedpersons });
@@ -200,7 +200,7 @@ d3.csv("homelessDisasters.csv").then((data)=>{
         };
 
 
-        Plotly.plot("displaced", plotData, layout, {responsive: true}, {paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)"});
+        Plotly.plot("chart-displaced", plotData, layout, {responsive: true}, {paper_bgcolor: "rgba(0,0,0,0)", plot_bgcolor: "rgba(0,0,0,0)"});
     });
 
 
