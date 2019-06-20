@@ -66,6 +66,7 @@ d3.csv("homelessDisasters.csv").then((data)=>{
             id: data.id.slice(),
             text: data.text.slice(),
             mode: 'markers',
+            hoverinfo: "y",
             marker: {
                 size: data.marker.size.slice(),
                 sizemode: 'area',
