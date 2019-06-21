@@ -6,6 +6,7 @@ d3.json("/data").then((data) => {
     //console.log(eq_filt, vol_filt, tsu_filt);
     //console.log(tens_filt);
     //Define icons
+    // Icon attribution: https://www.onlinewebfonts.com/; https://imgbin.com/ 
 
     var tsunamiIcon = L.icon({
         iconUrl: 'static/image/tsunami.png',

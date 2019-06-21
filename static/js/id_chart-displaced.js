@@ -190,7 +190,7 @@ d3.csv("static/data/homeless_disasters.csv").then((data)=>{
             plot_bgcolor: "rgba(0,0,0,0", 
 
             title: {
-                text: "People Displaced Due to Reported Natural Disasters<br>(2000 to 2007)",
+                text: "People Displaced Due to Reported Natural Disasters<br>(1900 to 2007)",
                 font: {family: "Cabin Sketch, monospace", size: 25, color: "#ffffff"}
             },
 
