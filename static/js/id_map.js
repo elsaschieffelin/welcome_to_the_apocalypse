@@ -25,22 +25,22 @@ d3.json("/data").then((data) => {
 
     });
 
-  //Years
-  console.log(typeof(eq_filt));
-  Object.entries(eq_filt).forEach((entry) => {
-  ot_filt = eq_filt.filter(function(a) {return a.YEAR >= 1900 && a.YEAR <1910});
-  tens_filt = eq_filt.filter(function(a) {return a.YEAR >= 1910 && a.YEAR <1920});
-  twenties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1920 && a.YEAR <1930});
-  thirties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1930 && a.YEAR <1940});
-  forties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1940 && a.YEAR <1950});
-  fifties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1950 && a.YEAR <1960});
-  sixties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1960 && a.YEAR <1970});
-  seventies_filt = eq_filt.filter(function(a) {return a.YEAR >= 1970 && a.YEAR <1980});
-  eighties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1980 && a.YEAR <1990});
-  nineties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1990 && a.YEAR <2000});
-  millennia_filt = eq_filt.filter(function(a) {return a.YEAR >= 2000 && a.YEAR <2010});
-  twoTens_filt= eq_filt.filter(function(a) {return a.YEAR >= 2010 && a.YEAR <=2019});
-});
+    //Years
+    // console.log(typeof(eq_filt));
+    Object.entries(eq_filt).forEach((entry) => {
+    ot_filt = eq_filt.filter(function(a) {return a.YEAR >= 1900 && a.YEAR <1910});
+    tens_filt = eq_filt.filter(function(a) {return a.YEAR >= 1910 && a.YEAR <1920});
+    twenties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1920 && a.YEAR <1930});
+    thirties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1930 && a.YEAR <1940});
+    forties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1940 && a.YEAR <1950});
+    fifties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1950 && a.YEAR <1960});
+    sixties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1960 && a.YEAR <1970});
+    seventies_filt = eq_filt.filter(function(a) {return a.YEAR >= 1970 && a.YEAR <1980});
+    eighties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1980 && a.YEAR <1990});
+    nineties_filt = eq_filt.filter(function(a) {return a.YEAR >= 1990 && a.YEAR <2000});
+    millennia_filt = eq_filt.filter(function(a) {return a.YEAR >= 2000 && a.YEAR <2010});
+    twoTens_filt= eq_filt.filter(function(a) {return a.YEAR >= 2010 && a.YEAR <=2019});
+    });
 
     //create decade layer
     var decMark0 = [];
@@ -49,14 +49,14 @@ d3.json("/data").then((data) => {
         L.marker(ot_filt[i].LOCATION, {icon:earthquakeIcon}).bindPopup("<p>" + "Year: "+ eq_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + ot_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + ot_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + ot_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + ot_filt[i].HOUSES_AFFECTED + "</p>"));
     }
     const decLayer0 = L.layerGroup(decMark0);
-    
+
     var decMark1 = [];
     for (var i = 0; i <tens_filt.length; i++) {
       decMark1.push(
         L.marker(tens_filt[i].LOCATION, {icon:earthquakeIcon}).bindPopup("<p>" + "Year: "+ tens_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + tens_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + tens_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + tens_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + tens_filt[i].HOUSES_AFFECTED + "</p>"));
     }
     const decLayer1 = L.layerGroup(decMark1);
-    
+
     var decMark2 = [];
     for (var i = 0; i <twenties_filt.length; i++) {
       decMark2.push(
@@ -121,7 +121,7 @@ d3.json("/data").then((data) => {
     const decLayer00 = L.layerGroup(decMark00);
 
     var decMark10 = [];
-    for (var i = 0; i <millennia_filt.length; i++) {
+    for (var i = 0; i <twoTens_filt.length; i++) {
       decMark10.push(
         L.marker(twoTens_filt[i].LOCATION, {icon:earthquakeIcon}).bindPopup("<p>" + "Year: "+ twoTens_filt[i].YEAR + "</p>"+ "<p>" + "Total Damage $MMUSD" + twoTens_filt[i].TOTAL_DAMAGE_MILLIONS_DOLLARS + "</p>" + "<p>" + "Total Deaths: " + twoTens_filt[i].TOTAL_DEATHS + "</p>" + "<p>" + "Total Injuries: " + twoTens_filt[i].TOTAL_INJURIES + "</p>" +  "<p>" + "Houses Affected: " + twoTens_filt[i].HOUSES_AFFECTED + "</p>"));
     }
@@ -185,26 +185,26 @@ d3.json("/data").then((data) => {
       Street: streetmap,
       Dark: darkmap,
       NOAAcolor: gebco_color,
-      NOAAgrey: gebco_greyscale
+      // NOAAgrey: gebco_greyscale
     };
 
     // Create overlay object to hold our overlay layer
     const overlayMaps = {
       Earthquakes: earthquakeLayer,
+      EQ1900s: decLayer0,
+      EQ1910s: decLayer1,
+      EQ1920s: decLayer2,
+      EQ1930s: decLayer3,
+      EQ1940s: decLayer4,
+      EQ1950s: decLayer5,
+      EQ1960s: decLayer6,
+      EQ1970s: decLayer7,
+      EQ1980s: decLayer8,
+      EQ1990s: decLayer9,
+      EQ2000s: decLayer00,
+      EQ2010s: decLayer10,
       Volcanoes: volcanoLayer,
-      Tsunamis: tsunamiLayer, 
-      nineteen: decLayer0,
-      tens: decLayer1,
-      twenties: decLayer2,
-      thirties: decLayer3,
-      forties: decLayer4,
-      fifties: decLayer5,
-      sixties: decLayer6,
-      seventies: decLayer7,
-      eighties: decLayer8,
-      nineties: decLayer9,
-      millenia: decLayer00,
-      twoTens: decLayer10
+      Tsunamis: tsunamiLayer,
     };
 
     // Create Leaflet map
@@ -215,6 +215,6 @@ d3.json("/data").then((data) => {
     });
 
     //Add basemap layers
-    L.control.layers(baseMaps, overlayMaps, {collapsed:false} ).addTo(myMap);
+    L.control.layers(baseMaps, overlayMaps, {collapsed:true} ).addTo(myMap);
 
   }); //end map
