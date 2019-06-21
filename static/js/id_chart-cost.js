@@ -98,7 +98,7 @@
             massDam.push(d.TotalDollars)
         });
 
-        console.log(allYear, allDam);
+        // console.log(allYear, allDam);
 
         // Create traces and plot
 

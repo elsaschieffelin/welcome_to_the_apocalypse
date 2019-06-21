@@ -2,7 +2,7 @@ d3.csv("static/data/homeless_disasters.csv").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.Displacedpersons = +row.Displacedpersons });
-    console.log(data);
+    // console.log(data);
 
     // create a lookup table to sort and regroup the columns of data,
     // first by year, then by type of disaster
@@ -173,7 +173,7 @@ d3.csv("static/data/homeless_disasters.csv").then((data)=>{
 
         // Animate
 
-        console.log(plotData);
+        // console.log(plotData);
 
         // Modify the layout
         

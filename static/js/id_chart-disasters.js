@@ -2,7 +2,7 @@ d3.csv("static/data/natural_disasters.csv").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.ReportedDisasters = +row.ReportedDisasters });
-    console.log(data);
+    // console.log(data);
 
     // create a lookup table to sort and regroup the columns of data,
     // first by year, then by type of disaster

@@ -24,22 +24,6 @@ body {
     border: 3px solid white;
 }
 
-.jumbotron {
-    /* https://ascienceenthusiast.com/totally-serious-prophecy-says-the-apocalypse-will-occur-in-2019-for-real-this-time-guys/ */
-    background-image: url(../image/jumbotron-img.jpg);
-    background-size: cover;
-    /* border-color: black; */
-    border-radius: 0 !important;
-}
-
-.jumbotron h1 {
-    letter-spacing: 5px;
-}
-
-.jumbotron p {
-    letter-spacing: 2px;
-}
-
 #map {
     margin: auto;
     height: 100%;
@@ -67,11 +51,8 @@ canvas {
     left: 0;
 }
 
-#attr {
-    background-color: rgba(0,0,0,0);
-}
-
-h1 {
+#attr, 
+#footer {
     background-color: rgba(0,0,0,0);
 }
 
@@ -81,4 +62,32 @@ p {
 
 li {
     font-size: 18px;
+}
+
+.hide{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.load-hidden {
+    visibility: hidden;
+  }
+
+.load-show {
+    visibility: visible;
+}
+
+select {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+}
+
+select option {
+    background-color: black;
+    color: #ffffff;
+    font-weight: bold;
 }
