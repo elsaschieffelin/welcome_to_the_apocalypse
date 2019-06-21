@@ -25,8 +25,9 @@ body {
 }
 
 #map {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 75%;
+    margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -92,4 +93,5 @@ select option {
     background-color: black;
     color: #ffffff;
     font-weight: bold;
+    padding: 10px;
 }
