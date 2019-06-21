@@ -178,21 +178,43 @@ d3.csv("static/data/homeless_disasters.csv").then((data)=>{
         // Modify the layout
         
         var layout = {
+
+            legend: {
+                y: .5,
+                font: {
+                    color: "#ffffff"
+                }
+            },
+
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0", 
+
             title: {
                 text: "People Displaced Due to Reported Natural Disasters<br>(2000 to 2007)",
-                font: {family: "Cabin Sketch", size: 25, color: "#7f7f7f"}
+                font: {family: "Cabin Sketch, monospace", size: 25, color: "#ffffff"}
             },
+
             xaxis:{
                 title: {
-                    text: "Year",
-                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f"}                    
+                    text: "<b>Year</b>",
+                    font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}                    
+                },
+                tickcolor: "#ffffff",
+                gridcolor: "rgba(0,0,0,0)",
+                tickfont: {
+                    color: "#ffffff"
                 }
             },
             yaxis: {
                 title: {
-                    text: "People Displaced (in millions)", 
-                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f" }
-                }
+                    text: "<b>People Displaced (in millions)<br> <b>", 
+                    font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}
+                },
+                tickcolor: "#ffffff",
+                gridcolor: "#ffffff",
+                tickfont: {
+                    color: "#ffffff"
+                } 
             },
            
             hovermode: "closest"

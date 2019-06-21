@@ -176,21 +176,42 @@
         var plotData = [trace2,trace3,trace4,trace5,trace6,trace7,trace8, trace9,trace10, trace1] 
         
         var layout = {
+
+            legend: {
+                y: .5,
+                font: {
+                    color: "#ffffff"
+                }
+            },
+
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0)", 
+                        
             title: {
                 text: "Economic Damage Due to Reported Natural Disasters",
-                font: {family: "Cabin Sketch", size: 25, color: "#7f7f7f"}
+                font: {family: "Cabin Sketch, monospace", size: 25, color: "#ffffff"}
             },
+
             xaxis:{
                 title: {
-                    text: "Year",
-                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f"}                    
+                    text: "<b>Year</b>",
+                    font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}                    
+                },
+                tickcolor: "#ffffff",
+                tickfont: {
+                    color: "#ffffff"
                 }
             },
             yaxis: {
                 title: {
-                    text: "US Dollars (in billions)", 
-                    font: {family: "Courier New, monospace", size: 18, color: "#7f7f7f" }
-                }
+                    text: "<b>US Dollars (in billions)<br> </b>", 
+                    font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}
+                },
+                tickcolor: "#ffffff",
+                gridcolor: "#ffffff",
+                tickfont: {
+                    color: "#ffffff"
+                } 
             },
             hovermode: "closest",
             barmode: "stack",

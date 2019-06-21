@@ -22,6 +22,8 @@
             crossorigin=""></script>
         <!-- Plotly CDN -->
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <!-- THREE CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/105/three.min.js"></script>
         <!-- Load Esri Leaflet from CDN -->
         <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js"
             integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ=="
@@ -32,18 +34,18 @@
         <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     </head>
     <body>
-        <div class="jumbotron text-center vertical-center">
+        <!-- <div class="jumbotron text-center vertical-center">
             <h1 class="display-4 text-danger mb-5">Welcome to the Apocalypse</h1>
             <p class="text-white">There have been significantly more natural disasters from 1900 until now.
                 This project strives to research how this frequency affects economic costs, local population, and housing.
                 Explore it!!!
             </p>
-        </div>
+        </div> -->
 
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <h3>Welcome to the End of Days!</h3>
+                <div class="col-12 text-white">
+                    <h3>Welcome to the end of Days!</h3>
                     <p>Is it possible to see the forest through the trees? Over the past century, the rate
                         natural disasters is increasing and yet we are not panicking. This
                         project is here to help you gain some perspective. Look at the amount of earthquakes! Check
@@ -52,10 +54,13 @@
                     </p>
                 </div>
             </div>
-            </div>
+        </div>
+
         <div id="map"></div>
+
         <div class="container">
             <div class="row charts">
+                <div class="col-12 mt-5" id="chart-disasters"></div>
                 <div class="col-12 mt-5" id="chart-death"></div>
                 <div class="col-12 mt-5" id="chart-displaced"></div>
                 <div class="col-12 mt-5" id="chart-cost"></div>
@@ -64,13 +69,13 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-white">
                     <div id="attr">
                         <p>Attr</p>
                         <p>
                             <ul><strong>Datasets:</strong>
-                                <li>The International Disaster Database (EM-DAT): <a href="https://www.emdat.be/emdat_db/">https://www.emdat.be/emdat_db/</a></li>
-                                <li>National Centers for Environmental Information (NOAA): <a href="https://www.ngdc.noaa.gov/">https://www.ngdc.noaa.gov/</a></li>
+                                <li>The International Disaster Database (EM-DAT): <a href="https://www.emdat.be/emdat_db/" style="color: #ffffff">https://www.emdat.be/emdat_db/</a></li>
+                                <li>National Centers for Environmental Information (NOAA): <a href="https://www.ngdc.noaa.gov/" style="color: #ffffff">https://www.ngdc.noaa.gov/</a></li>
                             </ul>
                         </p>
                     </div>
@@ -86,8 +91,10 @@
     <script src="{{ url_for('static', filename='js/config.js') }}"></script>
     <!-- app.js -->
     <script src="{{ url_for('static', filename='js/id_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_chart-disasters.js') }}"></script>
     <script src="{{ url_for('static', filename='js/id_chart-death.js') }}"></script>
     <script src="{{ url_for('static', filename='js/id_chart-displaced.js') }}"></script>
     <script src="{{ url_for('static', filename='js/id_chart-cost.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/anime.js') }}"></script>    
     </body>
 </html>

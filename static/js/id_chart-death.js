@@ -40,6 +40,11 @@ d3.csv("static/data/death_by_disasters.csv").then((data) => {
         {
             buttons: [
                 {
+                    args: [{"visible": [true, true, true, true, true, true, true, true, true, true]}],
+                    label: "Reset",
+                    method: "update"
+                },  
+                {
                     args: [{"visible": [false, false, false, false, false, false, false, false, true, true]}],
                     label: "Nonlethal",
                     method: "update"
@@ -58,41 +63,66 @@ d3.csv("static/data/death_by_disasters.csv").then((data) => {
                     args: [{"visible": [false, false, false, true, true, false, false, false, false, false]}],
                     label: "Stable",
                     method: "update"
-                },                                                            
-                {
-                    args: [{"visible": [true, true, true, true, true, true, true, true, true, true]}],
-                    label: "Reset",
-                    method: "update"
-                },                    
+                }
             ],
             direction: "left",
             pad: {"r": 10, "t": 10},
             type: "buttons",
-            x: 0.1,
+            x: 0.33,
             xanchor: "left",
             y: button_layer_2_height,
-            yanchor: "top"
+            yanchor: "top",
+            font: {
+                color: "red",
+                bordercolor: "#ffffff",
+            }
         },
     ];
     
     // Set the layout of Plotly bar chart as "stack"
     let layout = {
-        hovermode: "closest",
-        barmode: "stack",
-        xaxis: {
-            title: "<b> <br>Decades</b>",
-            tickangle: -45
-        },
-        yaxis: {
-            title: "<b>Number of Victims<br> </b>"           
-        },            
-        title: {
-            text: "Annual Global Number of Deaths per Decade",
+
+        legend: {
+            y: .5,
             font: {
-                family: "Cabin Sketch",
-                size: 25
+                color: "#ffffff"
             }
         },
+
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)", 
+        
+        title: {
+            text: "Annual Global Number of Deaths per Decade",
+            font: {family: "Cabin Sketch, monospace", size: 25, color: "#ffffff"}
+        },
+
+        xaxis: {
+            title: {
+                text: "<b> <br>Decades</b>",
+                font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}
+            },
+            tickcolor: "#ffffff",
+            tickfont: {
+                color: "#ffffff"
+            },                          
+            tickangle: -45
+        },
+        
+        yaxis: {
+            title: {
+                text: "<b>Number of Victims<br> </b>",
+                font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}
+            },
+            tickcolor: "#ffffff",
+            gridcolor: "#ffffff",
+            tickfont: {
+                color: "#ffffff"
+            }            
+        },
+
+        hovermode: "closest",
+        barmode: "stack",
         updatemenus: updatemenus
     };
 

@@ -1,4 +1,4 @@
-d3.csv("natural_disasters.csv").then((data)=>{
+d3.csv("static/data/natural_disasters.csv").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.ReportedDisasters = +row.ReportedDisasters });
@@ -187,55 +187,57 @@ d3.csv("natural_disasters.csv").then((data)=>{
         // Modify the layout
         
         var layout = {
-            
+
             legend: {
-            x: 1,
-            y: 0.5,
-            traceorder: 'normal',
-            font: {
-                family: 'sans-serif',
-                size: 12,
-                color: '#000'
-            },
-            bgcolor: '#E2E2E2',
-            bordercolor: '#000',
-            borderwidth: 2
+                y: .5,
+                font: {
+                    color: "#ffffff"
+                }
             },
 
-            paper_bgcolor: "rgba(0,0,0,0)", 
-            // plot_bgcolor: "rgba(0,0,0,0)",
+            paper_bgcolor: "rgba(0,0,0,0)",
+            plot_bgcolor: "rgba(0,0,0,0", 
             
             title: {
                 text: "Number of Reported Natural Disasters<br>(1900 - 2017)",
-                font: {family: "Courier New, monospace", size: 24, color: "#ffffff"}
-                
+                font: {family: "Cabin Sketch, monospace", size: 25, color: "#ffffff"}                
             },
+
             xaxis:{
                 title: {
-                    text: "Year",
+                    text: "<b>Year</b>",
                     font: {family: "Courier New, monospace", size: 18, color: "#ffffff"}                    
                 },
-                tickcolor: "#ffffff"
+                tickcolor: "#ffffff",
+                gridcolor: "rgba(0,0,0,0)",
+                tickfont: {
+                    color: "#ffffff"
+                }
             },
+            
             yaxis: {
                 title: {
-                    text: "Reported Disasters", 
+                    text: "<b>Reported Disasters<br> </b>", 
                     font: {family: "Courier New, monospace", size: 18, color: "#ffffff" }
                 },
-                tickcolor: "#ffffff"
+                tickcolor: "#ffffff",
+                gridcolor: "#ffffff",
+                tickfont: {
+                    color: "#ffffff"
+                }                
             },
-           
+
             hovermode: "closest"
 
         };
 
 
-        Plotly.plot("displaced", plotData, layout, {responsive: true});
+        Plotly.plot("chart-disasters", plotData, layout, {responsive: true});
 
 
-        Plotly.animate("lineChart", [{
-            data: [{ids: ids}]
-        }]);
+        // Plotly.animate("lineChart", [{
+        //     data: [{ids: ids}]
+        // }]);
 
 
     });
