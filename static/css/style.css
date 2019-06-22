@@ -57,6 +57,10 @@ body {
     background-color: rgba(0,0,0,0);
 }
 
+.black-bkgd {
+    background-color: #000000;
+}
+
 p {
     font-size: 20px;
 }
@@ -92,6 +96,16 @@ select option {
     color: #ffffff;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
 
 /* https://stackoverflow.com/questions/34143736/css-circle-border-with-various-colors */
 #red {
