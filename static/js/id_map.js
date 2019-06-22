@@ -210,7 +210,7 @@ d3.json("/data").then((data) => {
 
     // Create Leaflet map
     let myMap = L.map("map", {
-      center: [48.10, -100.10],
+      center: [10.10, -5.50],
       zoom: 2,
       layers: [gebco_color]
     });
