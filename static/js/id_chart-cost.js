@@ -3,7 +3,7 @@
     var parseYear = d3.timeParse("%Y");
     
     // Import data
-    d3.csv("static/data/economic_damage.csv")
+    d3.json("/data_money")
         .then((data)=> { 
             data.forEach((row)=>{ 
                 // Parse Year and convert dollars to numbers

@@ -1,4 +1,4 @@
-d3.csv("static/data/natural_disasters.csv").then((data)=>{
+d3.json("data_disaster").then((data)=>{
     
     // Change displaced persons to a number
     data.forEach((row)=>{ row.ReportedDisasters = +row.ReportedDisasters });

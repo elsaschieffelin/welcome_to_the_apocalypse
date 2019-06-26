@@ -16,12 +16,14 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']= 'sqlite:///data/ap_db.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
-base = automap_base()
-base.prepare(db.engine, reflect=True)
-master = base.classes.master_map
+Base = automap_base()
+Base.prepare(db.engine, reflect=True)
 
-
-
+Master = Base.classes.master_map
+Disaster = Base.classes.disaster_chart
+Death = Base.classes.death_chart
+Displaced = Base.classes.displaced_chart
+Eco = Base.classes.cost_chart
 
 # Home route
 @app.route('/')
@@ -32,7 +34,7 @@ def index():
 #data route
 @app.route('/data')
 def read():
-   data = db.session.query(master.ID, master.YEAR, master.COUNTRY, master.LATITUDE, master.LONGITUDE, master.DISASTER_TYPE, master.HOUSES_AFFECTED, master.TOTAL_DEATHS, master.TOTAL_INJURIES, master.TOTAL_DAMAGE_MILLIONS_DOLLARS).all()
+   data = db.session.query(Master.ID, Master.YEAR, Master.COUNTRY, Master.LATITUDE, Master.LONGITUDE, Master.DISASTER_TYPE, Master.HOUSES_AFFECTED, Master.TOTAL_DEATHS, Master.TOTAL_INJURIES, Master.TOTAL_DAMAGE_MILLIONS_DOLLARS).all()
    all_data = []
    for ID, year, country, lat, long, disaster, houses, deaths, injured, dollars in data:
       data_dict = {}
@@ -51,33 +53,71 @@ def read():
 
    return jsonify(all_data)
 
+#natural disaster csv
+@app.route('/data_disaster')
+def disasters():
+   data = db.session.query(Disaster.Entity, Disaster.Year, Disaster.ReportedDisasters).all()
+   all_data = []
+   for entity, year, reported_disaster in data:
+      data_dict = {}
+      data_dict['Entity'] = entity
+      data_dict['Year'] = year
+      data_dict['ReportedDisasters'] = reported_disaster
+      all_data.append(data_dict)
+
+   return jsonify(all_data)
+
 #deaths csv route
 @app.route('/data_deaths')
 def die_data():
-   data = pd.read_csv('static/data/death_by_disasters.csv')
-   json_data = json.loads(data.to_json(orient='records'))
-   return jsonify(json_data)
+
+   data = db.session.query(Death.Decades, Death.Drought, Death.Earthquake, Death.Extremetemperature, Death.Flood, Death.Landslide, Death.Massmovement, Death.Storm, Death.Volcanicactivity, Death.Wildfire).all()
+   all_data = []
+   for decade, drought, eq, ext_t, flood, landslide, massmove, storm, volc, wildfire in data:
+      data_dict = {}
+      data_dict['Decades'] = decade
+      data_dict['Drought'] = drought
+      data_dict['Earthquake'] = eq
+      data_dict['Extreme temperature'] = ext_t
+      data_dict['Flood'] = flood
+      data_dict['Landslide'] = landslide
+      data_dict['Mass movement (dry)'] = massmove
+      data_dict['Storm'] = storm
+      data_dict['Volcanic activity'] = volc      
+      data_dict['Wildfire'] = wildfire
+      all_data.append(data_dict) 
+
+   return jsonify(all_data)
 
 # economic costs csv
 @app.route('/data_money')
-def dollars(): 
-   data = pd.read_csv('static/data/economic_damage.csv')
-   jsoned = json.loads(data.to_json(orient='records'))
-   return jsonify(jsoned)
+def dollars():
+    
+   data = db.session.query(Eco.Entity, Eco.Year, Eco.TotalDollars).all()
+   all_data = []
+   for entity, year, dollars in data:
+      data_dict = {}
+      data_dict['Entity'] = entity
+      data_dict['Year'] = year
+      data_dict['TotalDollars'] = dollars
+      all_data.append(data_dict)
 
-#natural disaster csv
-@app.route('/data-disaster')
-def disasters():
-   data=pd.read_csv('static/data/natural_disasters.csv')
-   jsoned= json.loads(data.to_json(orient='records'))
-   return jsonify(jsoned)
+   return jsonify(all_data)
 
 #homelessness csv
 @app.route('/data-homelessness')
 def homeless():
-   data=pd.read_csv('static/data/homeless_disasters.csv')
-   jsoned=json.loads(data.to_json(orient='records'))
-   return jsonify(jsoned)
+    
+   data = db.session.query(Displaced.Entity, Displaced.Year, Displaced.Displacedpersons).all()
+   all_data = []
+   for entity, year, displaced in data:
+      data_dict = {}
+      data_dict['Entity'] = entity
+      data_dict['Year'] = year
+      data_dict['Displacedpersons'] = displaced
+      all_data.append(data_dict)
+
+   return jsonify(all_data)
 
 # Scripts execution
 if __name__ == "__main__":

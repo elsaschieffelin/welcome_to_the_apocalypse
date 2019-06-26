@@ -1,5 +1,7 @@
 // Read death by disasters data         <-- the data .csv file has to be inside the static folder as flask is used
-d3.csv("static/data/death_by_disasters.csv").then((data) => {
+d3.json("/data_deaths").then((data) => {
+    // console.log(data);
+    
 
     // Grap all column names from any data record (the first data record is used here)
     let colNames = Object.keys(data[0]);
@@ -40,30 +42,25 @@ d3.csv("static/data/death_by_disasters.csv").then((data) => {
         {
             buttons: [
                 {
-                    args: [{"visible": [true, true, true, true, true, true, true, true, true, true]}],
+                    args: [{"visible": [true, true, true, true, true, true, true, true, true]}],
                     label: "Reset",
                     method: "update"
                 },  
                 {
-                    args: [{"visible": [false, false, false, false, false, false, false, false, true, true]}],
-                    label: "Nonlethal",
+                    args: [{"visible": [false, false, false, false, false, false, false, true, true]}],
+                    label: "Less harmful",
                     method: "update"
                 },
                 {
-                    args: [{"visible": [true, false, false, false, false, false, true, true, false, false]}],
+                    args: [{"visible": [true, false, false, true, false, true, true, false, false]}],
                     label: "Decreasing",
                     method: "update"
                 },
                 {
-                    args: [{"visible": [false, true, true, false, false, true, false, false, false, false]}],
+                    args: [{"visible": [false, true, true, false, true, false, false, false, false]}],
                     label: "Increasing",
                     method: "update"
                 },
-                {
-                    args: [{"visible": [false, false, false, true, true, false, false, false, false, false]}],
-                    label: "Stable",
-                    method: "update"
-                }
             ],
             direction: "left",
             pad: {"r": 10, "t": 10},
