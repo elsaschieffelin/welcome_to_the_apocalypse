@@ -52,18 +52,18 @@
         <div id="map"></div>
         <select>
             <option value="placeholder" selected hidden>Select a Chart</option>
-            <option value="chart-disasters">Disasters by Years</option>
+            <option value="chart-reportedcase">Disasters by Years</option>
             <option value="chart-death">Deaths by Disasters</option>
             <option value="chart-displaced">Displaced by Disasters</option>
-            <option value="chart-cost">Economic Damage by Disasters</option>
+            <option value="chart-ecolost">Economic Damage by Disasters</option>
         </select>
 
         <div class="container">
             <div class="row charts">
-                <div class="col-11 mt-5 disaster hide load-hidden" id="chart-disasters"></div>
+                <div class="col-11 mt-5 disaster hide load-hidden" id="chart-reportedcase"></div>
                 <div class="col-11 mt-5 disaster hide load-hidden" id="chart-death"></div>
                 <div class="col-11 mt-5 disaster hide load-hidden" id="chart-displaced"></div>
-                <div class="col-11 mt-5 disaster hide load-hidden" id="chart-cost"></div>
+                <div class="col-11 mt-5 disaster hide load-hidden" id="chart-ecolost"></div>
             </div>
         </div>
 
@@ -91,14 +91,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
     <!-- API key -->
     <script src="{{ url_for('static', filename='js/config.js') }}"></script>
-    <!-- app.js -->
-    <script src="{{ url_for('static', filename='js/id_map2.js') }}"></script>
+    <!-- Plotting.js -->
+    <script src="{{ url_for('static', filename='js/id_map.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/id_charts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/anime.js') }}"></script>
+    <!-- Event listener for charts.js -->
     <script src="{{ url_for('static', filename='js/chart-show.js') }}"></script>  
-    <script src="{{ url_for('static', filename='js/id_chart-disasters.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/id_chart-death.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/id_chart-displaced.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/id_chart-cost.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/anime.js') }}"></script> 
     <!-- <script src="{{ url_for('static', filename='js/chart-mouseclick.js') }}"></script>      -->
     </body>
 </html>

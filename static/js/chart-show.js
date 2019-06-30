@@ -3,8 +3,6 @@ d3.select('select').on("change", function() {
 
     // Retrieve "value" of 'option' to be used for searching chart id
     let value = this.value;
-
-    // console.log(value);
     
     // Hide all disaster charts
     d3.selectAll(".disaster")
