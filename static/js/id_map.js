@@ -23,75 +23,75 @@ d3.json("/data_map").then((data) => {
   // Array for keys in "disasType"
   let keyArr = Object.keys(disasType);  
   
-  // Loop through "data"
-  data.forEach((d) => {
-    
-    // Take the tens figure of d.YEAR (apart from 1900) for case selection
-    let yearCal = Math.trunc((d.YEAR - 1900) / 10);
-    // Determine which decade array the data should be append to
-    // Note that keys of decades starts from index = 0 in "keyArr"
-    disasType[keyArr[yearCal]]["dataArr"].push(d);
-    
-    // Disaster type of iterated data
-    let dKey = d.DISASTER_TYPE;
-    // Append data to corresponding key array if its type is in "iconKeyArr"
-    disasType[dKey]["dataArr"].push(d);
-
-  });
-    
-  // Array for keys of specific disaster types (4 keys)
-  // Note that if using "keyArr" the last 3 keys will be removed from "keyArr"
-  let iconKeyArr = Object.keys(disasType).splice(-4);
-  
-  // Loop through "iconKeyArr"
-  iconKeyArr.forEach((key) => {
-
+  // Loop through array of keys that will add icon on map
+  // Note that if using "keyArr" rather than "Object.keys(disasType)" the last 3 keys will be removed from "keyArr"
+  Object.keys(disasType).splice(-4).forEach((key) => {
     // Icon attribution: https://www.onlinewebfonts.com/; https://imgbin.com/
     // Define each icon
     disasType[key]["icon"] = L.icon({
       iconUrl: `static/image/${key}.png`,
       iconSize: [20, 20]
-    }); 
-
-    // Read through each data for key from "iconKeyArr"
-    disasType[key]["dataArr"].forEach((d) => {
-      // Create icons on the map
-      disasType[key]["markers"].push(
-        L.marker(d.LOCATION, {icon: disasType[key]["icon"]})
-          .bindPopup(`<p class="popup-size"><b>Year:</b> ${d.YEAR}<br>
-            <b>Total Damage/MMUSD:</b> ${d.TOTAL_DAMAGE_MILLIONS_DOLLARS}<br>
-            <b>Total Deaths:</b> ${d.TOTAL_DEATHS}<br>
-            <b>Total Injuries:</b> ${d.TOTAL_INJURIES}<br>
-            <b>Houses Affected:</b> ${d.HOUSES_AFFECTED}</p>`
-      ));
     });
-    // Define layer on the map
-    disasType[key]["layer"] = L.layerGroup(disasType[key]["markers"]);
+  });
 
-  });  
-  
-  // Array for decades keys (without "2010s") when plotting on map
-  let decadeKeyArr = Object.keys(disasType).splice(0, keyArr.length - 4);
-  
-  // Read through each data for key from "decadeKeyArr"
-  decadeKeyArr.forEach((key) => {
+  // Start reading data
+  data.forEach((d) => {
     
-    disasType[key]["dataArr"].forEach((d) => {
-      // Create new markers on the map
-      disasType[key]["markers"].push(
-        L.circleMarker(d.LOCATION, {fillOpacity: 0.75, color: disasType[key]["color"], stroke: true, weight: .8, radius: 5})
+    // .......... DATA USED FOR DECADES .......... //
+    // Take the tens figure of d.YEAR (apart from 1900) for case selection
+    let yearCal = Math.trunc((d.YEAR - 1900) / 10);
+    // Determine which decade array the data should be append to
+    // Note that keys of decades starts from index = 0 in "keyArr"
+    disasType[keyArr[yearCal]]["dataArr"].push(d);
+
+    // Check if "d" is not in "2010s"
+    if (yearCal !== 11) {
+      // Create new circle marker on the map
+      disasType[keyArr[yearCal]]["markers"].push(
+        L.circleMarker(d.LOCATION, {fillOpacity: 0.75, color: disasType[keyArr[yearCal]]["color"], stroke: true, weight: .8, radius: 5})
           .bindPopup(`<p class="popup-size"><b>Year:</b> ${d.YEAR}<br>
             <b>Total Damage/MMUSD:</b> ${d.TOTAL_DAMAGE_MILLIONS_DOLLARS}<br>
             <b>Total Deaths:</b> ${d.TOTAL_DEATHS}<br>
             <b>Total Injuries:</b> ${d.TOTAL_INJURIES}<br>
             <b>Houses Affected:</b> ${d.HOUSES_AFFECTED}</p>`        
+      ));
+      // "d" is in "2010s" 
+    } else {
+      // Create new icon on the map
+      disasType["2010s"]["markers"].push(
+        L.marker(d.LOCATION, {icon: disasType["2010s"]["icon"]})
+          .bindPopup(`<p class="popup-size"><b>Year:</b> ${d.YEAR}<br>
+            <b>Total Damage/MMUSD:</b> ${d.TOTAL_DAMAGE_MILLIONS_DOLLARS}<br>
+            <b>Total Deaths:</b> ${d.TOTAL_DEATHS}<br>
+            <b>Total Injuries:</b> ${d.TOTAL_INJURIES}<br>
+            <b>Houses Affected:</b> ${d.HOUSES_AFFECTED}</p>`
       ));      
-    });
+    }
+
+    // .......... DATA USED FOR DISASTER TYPES .......... //
+    // Disaster type of iterated data
+    let dKey = d.DISASTER_TYPE;
+    // Append data to corresponding key array for disaster type
+    disasType[dKey]["dataArr"].push(d);
+
+    // Create new icon on the map
+    disasType[dKey]["markers"].push(
+      L.marker(d.LOCATION, {icon: disasType[dKey]["icon"]})
+        .bindPopup(`<p class="popup-size"><b>Year:</b> ${d.YEAR}<br>
+          <b>Total Damage/MMUSD:</b> ${d.TOTAL_DAMAGE_MILLIONS_DOLLARS}<br>
+          <b>Total Deaths:</b> ${d.TOTAL_DEATHS}<br>
+          <b>Total Injuries:</b> ${d.TOTAL_INJURIES}<br>
+          <b>Houses Affected:</b> ${d.HOUSES_AFFECTED}</p>`
+    ));
+
+  }); // End reading data
+
+  // Loop through "keyArr"
+  keyArr.forEach((key) => {
     // Define layer on the map
     disasType[key]["layer"] = L.layerGroup(disasType[key]["markers"]);
-
   });
-
+ 
   // Object to hold disasters divided either by types or by decades from 1900 to 2017
   let basemapArr = [
     {"type": {}, "id": "mapbox.streets"}, {"type": {}, "id": "mapbox.dark"}, 
