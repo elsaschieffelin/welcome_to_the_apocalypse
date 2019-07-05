@@ -14,43 +14,46 @@ d3.json("/data_map").then((data) => {
     "1980s": {"markers": [], "dataArr": [], "color": "#4169E1", "legendName": "the1980s"}, 
     "1990s": {"markers": [], "dataArr": [], "color": "#FF4500", "legendName": "the1990s"},
     "2000s": {"markers": [], "dataArr": [], "color": "#FFFF00", "legendName": "the2000s"}, 
-    "2010s": {"markers": [], "dataArr": [], "legendName": "the2010s"}, "tsunami": {"markers": [], "legendName": "Tsunamis"}, 
-    "volcano": {"markers": [], "legendName": "Volcanoes"}, "earthquake": {"markers": [], "legendName": "Earthquakes"}
+    "2010s": {"markers": [], "dataArr": [], "legendName": "the2010s"}, 
+    "tsunami": {"markers": [], "dataArr": [], "legendName": "Tsunamis"}, 
+    "volcano": {"markers": [], "dataArr": [], "legendName": "Volcanoes"}, 
+    "earthquake": {"markers": [], "dataArr": [], "legendName": "Earthquakes"}
   };
   
   // Array for keys in "disasType"
-  let keyArr = Object.keys(disasType); 
+  let keyArr = Object.keys(disasType);  
   
-  // Append each data to different decade arrays
+  // Loop through "data"
   data.forEach((d) => {
+    
     // Take the tens figure of d.YEAR (apart from 1900) for case selection
     let yearCal = Math.trunc((d.YEAR - 1900) / 10);
     // Determine which decade array the data should be append to
     // Note that keys of decades starts from index = 0 in "keyArr"
     disasType[keyArr[yearCal]]["dataArr"].push(d);
-  });
+    
+    // Disaster type of iterated data
+    let dKey = d.DISASTER_TYPE;
+    // Append data to corresponding key array if its type is in "iconKeyArr"
+    disasType[dKey]["dataArr"].push(d);
 
-  
-  // Array for keys with icon when plotting on map
+  });
+    
+  // Array for keys of specific disaster types (4 keys)
   // Note that if using "keyArr" the last 3 keys will be removed from "keyArr"
   let iconKeyArr = Object.keys(disasType).splice(-4);
   
   // Loop through "iconKeyArr"
   iconKeyArr.forEach((key) => {
 
-    // Append data for each specific disaster type (3 keys)
-    if (key !== "2010s") {
-      disasType[key]["dataArr"] = data.filter((d) => d.DISASTER_TYPE === key);
-    }
-
     // Icon attribution: https://www.onlinewebfonts.com/; https://imgbin.com/
-    // Define each icon (4 keys)
+    // Define each icon
     disasType[key]["icon"] = L.icon({
       iconUrl: `static/image/${key}.png`,
       iconSize: [20, 20]
     }); 
 
-    // Read through each data for key from "iconKeyArr" (4 keys)
+    // Read through each data for key from "iconKeyArr"
     disasType[key]["dataArr"].forEach((d) => {
       // Create icons on the map
       disasType[key]["markers"].push(
