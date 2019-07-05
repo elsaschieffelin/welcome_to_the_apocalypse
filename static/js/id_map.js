@@ -92,7 +92,7 @@ d3.json("/data_map").then((data) => {
     disasType[key]["layer"] = L.layerGroup(disasType[key]["markers"]);
   });
  
-  // Object to hold disasters divided either by types or by decades from 1900 to 2017
+  // Array for basemaps
   let basemapArr = [
     {"type": {}, "id": "mapbox.streets"}, {"type": {}, "id": "mapbox.dark"}, 
   ];
