@@ -96,6 +96,14 @@ select option {
     font-weight: bold;
 }
 
+.leaflet-popup-content-wrapper {
+    background-color: black;
+}
+
+.popup-size {
+    color: #ffffff;
+    font-size: 12px;
+}
 
 
 
