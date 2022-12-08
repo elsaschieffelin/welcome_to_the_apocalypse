@@ -1,6 +1,6 @@
 astroid==2.1.0
 autopep8==1.4.3
-certifi==2019.3.9
+certifi==2022.12.7
 Click==7.0
 colorama==0.4.1
 Flask==1.0.3
